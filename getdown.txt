@@ -1,5 +1,5 @@
 # The URL from which the client is downloaded
-appbase = https://github.com/SeriousCancerous/INVENTORY-TOOL/blob/master/
+appbase = https://github.com/SeriousCancerous/INVENTORY-TOOL/blob/master?raw=true
 
 #UI Configuration
 ui.name = Inventory Tool
