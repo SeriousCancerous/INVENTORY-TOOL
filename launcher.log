@@ -1,38 +1,34 @@
-2022/07/21 13:52:30:128 INFO m.a: ------------------ VM Info ------------------
-2022/07/21 13:52:30:134 INFO m.a: -- OS Name: Windows 10
-2022/07/21 13:52:30:135 INFO m.a: -- OS Arch: amd64
-2022/07/21 13:52:30:135 INFO m.a: -- OS Vers: 10.0
-2022/07/21 13:52:30:135 INFO m.a: -- Java Vers: 11.0.15
-2022/07/21 13:52:30:135 INFO m.a: -- Java Home: C:\Program Files\Java\jdk-11.0.15
-2022/07/21 13:52:30:135 INFO m.a: -- User Name: Cancerous
-2022/07/21 13:52:30:135 INFO m.a: -- User Home: C:\Users\Cancerous
-2022/07/21 13:52:30:136 INFO m.a: -- Cur dir: D:\DEVELOPMENT\JAVA\InventoryTool
-2022/07/21 13:52:30:136 INFO m.a: ---------------------------------------------
-2022/07/21 13:52:30:190 INFO m.a: Failed to find proxy settings in Windows registry [error=java.lang.UnsatisfiedLinkError: no jRegistryKey in java.library.path: [C:\Program Files\Java\jdk-11.0.15\bin, C:\WINDOWS\Sun\Java\bin, C:\WINDOWS\system32, C:\WINDOWS, C:\Program Files\Common Files\Oracle\Java\javapath, C:\WINDOWS\system32, C:\WINDOWS, C:\WINDOWS\System32\Wbem, C:\WINDOWS\System32\WindowsPowerShell\v1.0\, C:\WINDOWS\System32\OpenSSH\, C:\Program Files\MySQL\MySQL Utilities 1.6\, C:\Program Files\Git\cmd, C:\Program Files\nodejs\, D:\DEVELOPMENT\SDK\flutter\bin, C:\platform-tools, C:\Users\Cancerous\AppData\Local\Microsoft\WindowsApps, C:\Users\Cancerous\AppData\Roaming\npm, C:\Users\Cancerous\AppData\Local\Programs\Microsoft VS Code\bin, C:\Program Files\heroku\bin, D:\DEVELOPMENT\SDK\flutter\bin, C:\platform-tools, ., .]]
-2022/07/21 13:52:30:193 INFO m.a: ---------------- Proxy Info -----------------
-2022/07/21 13:52:30:193 INFO m.a: -- Proxy Host: null
-2022/07/21 13:52:30:193 INFO m.a: -- Proxy Port: null
-2022/07/21 13:52:30:193 INFO m.a: ---------------------------------------------
-2022/07/21 13:52:30:202 INFO m.a: Able to lock for updates: true
-2022/07/21 13:52:30:245 INFO m.a: Verifying application: https://github.com/SeriousCancerous/INVENTORY-TOOL/blob/master/
-2022/07/21 13:52:30:246 INFO m.a: Version: -1
-2022/07/21 13:52:30:246 INFO m.a: Class: dsk.inventory.tool.main.MainFrame
-2022/07/21 13:52:30:246 INFO m.a: Failed to load digest: files\digest2.txt (The system cannot find the file specified). Attempting recovery...
-2022/07/21 13:52:30:247 INFO m.a: Dropping status 'm.validating'.
-2022/07/21 13:52:30:248 INFO m.a: Attempting to refetch 'digest.txt' from 'https://github.com/SeriousCancerous/INVENTORY-TOOL/blob/master/digest.txt'.
-2022/07/21 13:52:30:373 WARNING m.a: Failed to load image [path=files\img\launcher-background.png, error=javax.imageio.IIOException: Can't read input file!]
-2022/07/21 13:52:30:373 WARNING m.a: Failed to load image [path=files\img\progress-background.png, error=javax.imageio.IIOException: Can't read input file!]
-2022/07/21 13:52:31:189 WARNING m.a: Failed to refresh non-versioned digest: https://github.com/SeriousCancerous/INVENTORY-TOOL/blob/master/digest.txt. Proceeding...
-2022/07/21 13:52:31:189 INFO m.a: Attempting to refetch 'digest.txt' from 'https://github.com/SeriousCancerous/INVENTORY-TOOL/blob/master/digest.txt'.
-2022/07/21 13:52:31:393 WARNING m.a: getdown() failed.
-java.io.FileNotFoundException: https://github.com/SeriousCancerous/INVENTORY-TOOL/blob/master/digest.txt
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1920)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1520)
-	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:250)
-	at com.threerings.getdown.data.Application.downloadFile(Unknown Source)
-	at com.threerings.getdown.data.Application.downloadControlFile(Unknown Source)
-	at com.threerings.getdown.data.Application.downloadDigestFiles(Unknown Source)
-	at com.threerings.getdown.data.Application.verifyMetadata(Unknown Source)
-	at com.threerings.getdown.launcher.Getdown.getdown(Unknown Source)
-	at com.threerings.getdown.launcher.Getdown.run(Unknown Source)
-2022/07/21 13:52:31:393 INFO m.a: Releasing lock
+2022/07/21 14:05:37:896 INFO m.a: ------------------ VM Info ------------------
+2022/07/21 14:05:37:901 INFO m.a: -- OS Name: Windows 10
+2022/07/21 14:05:37:901 INFO m.a: -- OS Arch: amd64
+2022/07/21 14:05:37:901 INFO m.a: -- OS Vers: 10.0
+2022/07/21 14:05:37:901 INFO m.a: -- Java Vers: 11.0.15
+2022/07/21 14:05:37:902 INFO m.a: -- Java Home: C:\Program Files\Java\jdk-11.0.15
+2022/07/21 14:05:37:902 INFO m.a: -- User Name: Cancerous
+2022/07/21 14:05:37:902 INFO m.a: -- User Home: C:\Users\Cancerous
+2022/07/21 14:05:37:902 INFO m.a: -- Cur dir: D:\DEVELOPMENT\JAVA\InventoryTool
+2022/07/21 14:05:37:902 INFO m.a: ---------------------------------------------
+2022/07/21 14:05:37:955 INFO m.a: Failed to find proxy settings in Windows registry [error=java.lang.UnsatisfiedLinkError: no jRegistryKey in java.library.path: [C:\Program Files\Java\jdk-11.0.15\bin, C:\WINDOWS\Sun\Java\bin, C:\WINDOWS\system32, C:\WINDOWS, C:\Program Files\Common Files\Oracle\Java\javapath, C:\WINDOWS\system32, C:\WINDOWS, C:\WINDOWS\System32\Wbem, C:\WINDOWS\System32\WindowsPowerShell\v1.0\, C:\WINDOWS\System32\OpenSSH\, C:\Program Files\MySQL\MySQL Utilities 1.6\, C:\Program Files\Git\cmd, C:\Program Files\nodejs\, D:\DEVELOPMENT\SDK\flutter\bin, C:\platform-tools, C:\Users\Cancerous\AppData\Local\Microsoft\WindowsApps, C:\Users\Cancerous\AppData\Roaming\npm, C:\Users\Cancerous\AppData\Local\Programs\Microsoft VS Code\bin, C:\Program Files\heroku\bin, D:\DEVELOPMENT\SDK\flutter\bin, C:\platform-tools, ., .]]
+2022/07/21 14:05:37:958 INFO m.a: ---------------- Proxy Info -----------------
+2022/07/21 14:05:37:959 INFO m.a: -- Proxy Host: null
+2022/07/21 14:05:37:959 INFO m.a: -- Proxy Port: null
+2022/07/21 14:05:37:959 INFO m.a: ---------------------------------------------
+2022/07/21 14:05:37:968 INFO m.a: Able to lock for updates: true
+2022/07/21 14:05:38:007 INFO m.a: Verifying application: https://github.com/SeriousCancerous/INVENTORY-TOOL/blob/master/
+2022/07/21 14:05:38:008 INFO m.a: Version: -1
+2022/07/21 14:05:38:008 INFO m.a: Class: dsk.inventory.tool.main.MainFrame
+2022/07/21 14:05:38:008 INFO m.a: Dropping status 'm.validating'.
+2022/07/21 14:05:38:018 INFO m.a: Attempting to refetch 'digest.txt' from 'https://github.com/SeriousCancerous/INVENTORY-TOOL/blob/master/digest.txt'.
+2022/07/21 14:05:39:287 INFO m.a: No signers, not verifying file [path=digest.txt]
+2022/07/21 14:05:39:288 INFO m.a: Attempting to refetch 'digest2.txt' from 'https://github.com/SeriousCancerous/INVENTORY-TOOL/blob/master/digest2.txt'.
+2022/07/21 14:05:39:765 INFO m.a: No signers, not verifying file [path=digest2.txt]
+2022/07/21 14:05:39:793 WARNING m.a: Failed to refresh non-versioned digest: m.invalid_digest_file|~|~0d9bd2bc01c18dfdca9e6128832856a9b16a74d80ecec4e2c8d87cfa4ec25853. Proceeding...
+2022/07/21 14:05:40:071 INFO m.a: Verified resources [count=70, size=49174k, duration=276ms]
+2022/07/21 14:05:40:072 INFO m.a: Installing 0 downloaded resources:
+2022/07/21 14:05:40:072 INFO m.a: Install completed.
+2022/07/21 14:05:40:076 INFO m.a: Didn't find any custom environment variables, not setting any.
+2022/07/21 14:05:40:076 INFO m.a: Running C:\Program Files\Java\jdk-11.0.15\bin\javaw.exe
+  -classpath
+  D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\dsk.inventory.tool.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\template\inventory-tool-data-entry.xls;D:\DEVELOPMENT\JAVA\InventoryTool\files\dir_articles\dir_articles.xls;D:\DEVELOPMENT\JAVA\InventoryTool\files\report\dsk_property_sticker_v2.jasper;D:\DEVELOPMENT\JAVA\InventoryTool\files\report\dsk_property_sticker_v2.jrxml;D:\DEVELOPMENT\JAVA\InventoryTool\files\report\background\sticker_green_v2.jpeg;D:\DEVELOPMENT\JAVA\InventoryTool\files\report\background\sticker_yellow_v2.jpeg;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\zxing-core-3.3.0.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\zxing-javase-3.3.0.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\ant-1.7.1.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\barbecue-1.5-beta1.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\barcode4j-2.0.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\batik-anim.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\batik-awt-util.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\batik-bridge.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\batik-css.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\batik-dom.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\batik-ext.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\batik-gvt.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\batik-parser.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\batik-script.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\batik-svg-dom.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\batik-svggen.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\batik-util.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\batik-xml.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\bcel-5.2.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\bsh-2.0b4.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\castor-1.2.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\commons-beanutils-1.8.0.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\commons-collections-3.1.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\commons-digester-1.7.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\commons-javaflow-20060411.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\commons-logging-1.0.4.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\commons-logging-1.1.2.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\common-util.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\groovy-all-1.7.5.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\hsqldb-1.8.0-10.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\iText-2.1.7.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\jackson-core-lgpl-1.7.4.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\jackson-mapper-lgpl-1.7.4.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\jasperreports-4.5.0.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\jasperreports-applet-4.5.0.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\jasperreports-fonts-4.5.0.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\jasperreports-javaflow-4.5.0.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\jaxen-1.1.1.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\jcommon-1.0.15.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\jdt-compiler-3.1.1.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\jfreechart-1.0.12.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\jpa.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\jxl-2.6.10.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\log4j-1.2.15.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\mondrian-3.1.1.12687.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\png-encoder-1.5.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\poi-3.7-20101029.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\poi-ooxml-3.7-20101029.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\poi-ooxml-schemas-3.7-20101029.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\rhino-1.7R1.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\saaj-api-1.3.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\serializer.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\servlet.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\spring-beans-2.5.5.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\spring-core-2.5.5.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\velocity-1.7-dep.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\xalan-2.7.1.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\xbean.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\xercesImpl-2.7.0.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\xml-apis.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\xml-apis-ext.jar
+  -Dcom.threerings.getdown=true
+  dsk.inventory.tool.main.MainFrame
