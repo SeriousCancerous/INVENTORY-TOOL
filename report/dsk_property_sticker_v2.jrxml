@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="dsk_property_sticker" language="groovy" columnCount="2" pageWidth="595" pageHeight="842" columnWidth="290" leftMargin="7" rightMargin="7" topMargin="17" bottomMargin="17">
+	<property name="ireport.zoom" value="2.4793388429752063"/>
+	<property name="ireport.x" value="42"/>
+	<property name="ireport.y" value="11"/>
+	<parameter name="REPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="qr_image" class="java.awt.Image"/>
+	<field name="school" class="java.lang.String"/>
+	<field name="school_id" class="java.lang.String"/>
+	<field name="school_level" class="java.lang.String"/>
+	<field name="district" class="java.lang.String"/>
+	<field name="district_id" class="java.lang.String"/>
+	<field name="prop_year" class="java.lang.String"/>
+	<field name="prop_ppe_sm_ag" class="java.lang.String"/>
+	<field name="prop_gl_account" class="java.lang.String"/>
+	<field name="prop_sub_category" class="java.lang.String"/>
+	<field name="prop_series_no" class="java.lang.String"/>
+	<field name="article" class="java.lang.String"/>
+	<field name="visible_description" class="java.lang.String"/>
+	<field name="description" class="java.lang.String"/>
+	<field name="serial_no" class="java.lang.String"/>
+	<field name="package_acquisition_cost" class="java.math.BigDecimal"/>
+	<field name="acquisition_cost" class="java.math.BigDecimal"/>
+	<field name="acquisition_date" class="java.util.Date"/>
+	<field name="at_lastname" class="java.lang.String"/>
+	<field name="at_firstname" class="java.lang.String"/>
+	<field name="at_middlename" class="java.lang.String"/>
+	<field name="at_nameext" class="java.lang.String"/>
+	<field name="loc_of_prop" class="java.lang.String"/>
+	<field name="fund_source" class="java.lang.String"/>
+	<field name="tb_lastname" class="java.lang.String"/>
+	<field name="tb_firstname" class="java.lang.String"/>
+	<field name="tb_middlename" class="java.lang.String"/>
+	<field name="tb_nameext" class="java.lang.String"/>
+	<field name="is_division_office" class="java.lang.Boolean"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="174" splitType="Stretch">
+			<image>
+				<reportElement x="2" y="2" width="286" height="170">
+					<printWhenExpression><![CDATA[$F{package_acquisition_cost}>=50000
+    ||$F{acquisition_cost}>=50000]]></printWhenExpression>
+				</reportElement>
+				<imageExpression class="java.lang.String"><![CDATA[$P{REPORT_DIR}+"\\report\\background\\sticker_yellow_v2.jpeg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="2" y="2" width="286" height="170">
+					<printWhenExpression><![CDATA[!($F{acquisition_cost}>=50000) && !($F{package_acquisition_cost}>=50000)]]></printWhenExpression>
+				</reportElement>
+				<imageExpression class="java.lang.String"><![CDATA[$P{REPORT_DIR}+"\\report\\background\\sticker_green_v2.jpeg"]]></imageExpression>
+			</image>
+			<image scaleImage="FillFrame">
+				<reportElement x="173" y="40" width="95" height="95"/>
+				<imageExpression class="java.awt.Image"><![CDATA[$F{qr_image}]]></imageExpression>
+			</image>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="82" y="44" width="95" height="10" isPrintWhenDetailOverflows="true"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Arial" size="6" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[($F{district}==""?"":$F{district}+"/")+$F{school}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="82" y="54" width="95" height="10" isPrintWhenDetailOverflows="true"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Arial" size="6" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{prop_year}+"-"+$F{prop_ppe_sm_ag}+"-"+$F{prop_gl_account}+"-"+$F{prop_sub_category}+"-"+$F{prop_series_no}+"-"+$F{school_id}+"-"+$F{school_level}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="82" y="64" width="95" height="10" isPrintWhenDetailOverflows="true"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Arial" size="6" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{article} +($F{visible_description}.isEmpty()?"": " / "+$F{visible_description} )]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="82" y="74" width="95" height="10" isPrintWhenDetailOverflows="true"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Arial" size="6" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{serial_no}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,###.00;(#,###.00)" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="82" y="84" width="95" height="10" isPrintWhenDetailOverflows="true"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Arial" size="6" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.math.BigDecimal"><![CDATA[($F{package_acquisition_cost}==null||!($F{package_acquisition_cost}>0)?
+$F{acquisition_cost}:$F{package_acquisition_cost})]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="82" y="94" width="95" height="10" isPrintWhenDetailOverflows="true"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Arial" size="6" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{acquisition_date}==null?"":new SimpleDateFormat("yyyy-MM-dd").format($F{acquisition_date})]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="82" y="104" width="95" height="10" isPrintWhenDetailOverflows="true"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Arial" size="6" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{fund_source}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="82" y="114" width="95" height="10" isPrintWhenDetailOverflows="true"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Arial" size="6" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{at_lastname}+", "+$F{at_firstname}+" "+$F{at_nameext}+" "+$F{at_middlename}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="82" y="124" width="95" height="10" isPrintWhenDetailOverflows="true"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Arial" size="6" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{loc_of_prop}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="82" y="134" width="95" height="10" isPrintWhenDetailOverflows="true"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Arial" size="6" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{tb_lastname}+", "+$F{tb_firstname}+" "+$F{tb_nameext}+" "+$F{tb_middlename}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" x="22" y="54" width="60" height="10" isPrintWhenDetailOverflows="true"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Arial" size="6" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Property No.:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" x="22" y="64" width="60" height="10" isPrintWhenDetailOverflows="true"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Arial" size="6" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Article & Desc.:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" x="22" y="74" width="60" height="10" isPrintWhenDetailOverflows="true"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Arial" size="6" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Serial No.:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" x="22" y="84" width="60" height="10" isPrintWhenDetailOverflows="true"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Arial" size="6" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Acquisition Cost: Php: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" x="22" y="94" width="60" height="10" isPrintWhenDetailOverflows="true"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Arial" size="6" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Acquisition Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" x="22" y="104" width="60" height="10" isPrintWhenDetailOverflows="true"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Arial" size="6" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Source of Fund: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" x="22" y="114" width="60" height="10" isPrintWhenDetailOverflows="true"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Arial" size="6" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Assigned to: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" x="22" y="124" width="60" height="10" isPrintWhenDetailOverflows="true"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Arial" size="6" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Location of Property:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" x="22" y="134" width="60" height="10" isPrintWhenDetailOverflows="true"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Arial" size="6" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Tagged By:]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="22" y="44" width="60" height="10" isPrintWhenDetailOverflows="true"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Arial" size="6" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{is_division_office}?"Division Office:":"District/School:"]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="20">
+			<textField>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="249" y="0" width="33" height="20"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression class="java.lang.Integer"><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="287" y="0" width="36" height="20"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression class="java.lang.Integer"><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="282" y="0" width="5" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression class="java.lang.Integer"><![CDATA["/"]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

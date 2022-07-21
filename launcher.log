@@ -1,0 +1,38 @@
+2022/07/21 13:52:30:128 INFO m.a: ------------------ VM Info ------------------
+2022/07/21 13:52:30:134 INFO m.a: -- OS Name: Windows 10
+2022/07/21 13:52:30:135 INFO m.a: -- OS Arch: amd64
+2022/07/21 13:52:30:135 INFO m.a: -- OS Vers: 10.0
+2022/07/21 13:52:30:135 INFO m.a: -- Java Vers: 11.0.15
+2022/07/21 13:52:30:135 INFO m.a: -- Java Home: C:\Program Files\Java\jdk-11.0.15
+2022/07/21 13:52:30:135 INFO m.a: -- User Name: Cancerous
+2022/07/21 13:52:30:135 INFO m.a: -- User Home: C:\Users\Cancerous
+2022/07/21 13:52:30:136 INFO m.a: -- Cur dir: D:\DEVELOPMENT\JAVA\InventoryTool
+2022/07/21 13:52:30:136 INFO m.a: ---------------------------------------------
+2022/07/21 13:52:30:190 INFO m.a: Failed to find proxy settings in Windows registry [error=java.lang.UnsatisfiedLinkError: no jRegistryKey in java.library.path: [C:\Program Files\Java\jdk-11.0.15\bin, C:\WINDOWS\Sun\Java\bin, C:\WINDOWS\system32, C:\WINDOWS, C:\Program Files\Common Files\Oracle\Java\javapath, C:\WINDOWS\system32, C:\WINDOWS, C:\WINDOWS\System32\Wbem, C:\WINDOWS\System32\WindowsPowerShell\v1.0\, C:\WINDOWS\System32\OpenSSH\, C:\Program Files\MySQL\MySQL Utilities 1.6\, C:\Program Files\Git\cmd, C:\Program Files\nodejs\, D:\DEVELOPMENT\SDK\flutter\bin, C:\platform-tools, C:\Users\Cancerous\AppData\Local\Microsoft\WindowsApps, C:\Users\Cancerous\AppData\Roaming\npm, C:\Users\Cancerous\AppData\Local\Programs\Microsoft VS Code\bin, C:\Program Files\heroku\bin, D:\DEVELOPMENT\SDK\flutter\bin, C:\platform-tools, ., .]]
+2022/07/21 13:52:30:193 INFO m.a: ---------------- Proxy Info -----------------
+2022/07/21 13:52:30:193 INFO m.a: -- Proxy Host: null
+2022/07/21 13:52:30:193 INFO m.a: -- Proxy Port: null
+2022/07/21 13:52:30:193 INFO m.a: ---------------------------------------------
+2022/07/21 13:52:30:202 INFO m.a: Able to lock for updates: true
+2022/07/21 13:52:30:245 INFO m.a: Verifying application: https://github.com/SeriousCancerous/INVENTORY-TOOL/blob/master/
+2022/07/21 13:52:30:246 INFO m.a: Version: -1
+2022/07/21 13:52:30:246 INFO m.a: Class: dsk.inventory.tool.main.MainFrame
+2022/07/21 13:52:30:246 INFO m.a: Failed to load digest: files\digest2.txt (The system cannot find the file specified). Attempting recovery...
+2022/07/21 13:52:30:247 INFO m.a: Dropping status 'm.validating'.
+2022/07/21 13:52:30:248 INFO m.a: Attempting to refetch 'digest.txt' from 'https://github.com/SeriousCancerous/INVENTORY-TOOL/blob/master/digest.txt'.
+2022/07/21 13:52:30:373 WARNING m.a: Failed to load image [path=files\img\launcher-background.png, error=javax.imageio.IIOException: Can't read input file!]
+2022/07/21 13:52:30:373 WARNING m.a: Failed to load image [path=files\img\progress-background.png, error=javax.imageio.IIOException: Can't read input file!]
+2022/07/21 13:52:31:189 WARNING m.a: Failed to refresh non-versioned digest: https://github.com/SeriousCancerous/INVENTORY-TOOL/blob/master/digest.txt. Proceeding...
+2022/07/21 13:52:31:189 INFO m.a: Attempting to refetch 'digest.txt' from 'https://github.com/SeriousCancerous/INVENTORY-TOOL/blob/master/digest.txt'.
+2022/07/21 13:52:31:393 WARNING m.a: getdown() failed.
+java.io.FileNotFoundException: https://github.com/SeriousCancerous/INVENTORY-TOOL/blob/master/digest.txt
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1920)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1520)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:250)
+	at com.threerings.getdown.data.Application.downloadFile(Unknown Source)
+	at com.threerings.getdown.data.Application.downloadControlFile(Unknown Source)
+	at com.threerings.getdown.data.Application.downloadDigestFiles(Unknown Source)
+	at com.threerings.getdown.data.Application.verifyMetadata(Unknown Source)
+	at com.threerings.getdown.launcher.Getdown.getdown(Unknown Source)
+	at com.threerings.getdown.launcher.Getdown.run(Unknown Source)
+2022/07/21 13:52:31:393 INFO m.a: Releasing lock
