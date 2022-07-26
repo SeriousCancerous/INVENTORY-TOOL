@@ -20,6 +20,14 @@ code = report/dsk_property_sticker_v2.jasper
 code = report/dsk_property_sticker_v2.jrxml
 code = report/background/sticker_green_v2.jpeg
 code = report/background/sticker_yellow_v2.jpeg
+code = report/annex_a_icf_report.jasper
+code = report/annex_a_icf_report.jrxml
+code = report/annex_b_found_at_station_report.jasper
+code = report/annex_b_found_at_station_report.jrxml
+code = report/annex_c_non_existing_report.jasper
+code = report/annex_c_non_existing_report.jrxml
+code = report/resources/report_footer.png
+code = report/resources/report_header.png
 
 #libraries
 code = bin/lib/zxing-core-3.3.0.jar
