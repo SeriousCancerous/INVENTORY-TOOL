@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rpci_rpcppe_report" language="groovy" pageWidth="1008" pageHeight="612" orientation="Landscape" columnWidth="968" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="3.0"/>
+	<property name="ireport.x" value="420"/>
+	<property name="ireport.y" value="480"/>
+	<parameter name="REPORT_DIR" class="java.lang.String"/>
+	<parameter name="report_group_name" class="java.lang.String"/>
+	<parameter name="report_account_title" class="java.lang.String"/>
+	<parameter name="report_total_value" class="java.math.BigDecimal"/>
+	<parameter name="report_station" class="java.lang.String"/>
+	<parameter name="C1R1_TITLE" class="java.lang.String"/>
+	<parameter name="C1R1_NAME" class="java.lang.String"/>
+	<parameter name="C1R2_TITLE" class="java.lang.String"/>
+	<parameter name="C1R2_NAME" class="java.lang.String"/>
+	<parameter name="C1R3_TITLE" class="java.lang.String"/>
+	<parameter name="C1R3_NAME" class="java.lang.String"/>
+	<parameter name="C2R1_TITLE" class="java.lang.String"/>
+	<parameter name="C2R1_NAME" class="java.lang.String"/>
+	<parameter name="C2R1_DATE_ASSUMPTION" class="java.lang.String"/>
+	<parameter name="C3R1_TITLE" class="java.lang.String"/>
+	<parameter name="C3R1_NAME" class="java.lang.String"/>
+	<parameter name="C4R1_TITLE" class="java.lang.String"/>
+	<parameter name="C4R1_NAME" class="java.lang.String"/>
+	<field name="account_title" class="java.lang.String"/>
+	<field name="account_title_rp_group" class="java.lang.String"/>
+	<field name="account_code" class="java.lang.String"/>
+	<field name="date_as_at" class="java.util.Date"/>
+	<field name="article" class="java.lang.String"/>
+	<field name="description" class="java.lang.String"/>
+	<field name="property_number" class="java.lang.String"/>
+	<field name="acquisition_date" class="java.util.Date"/>
+	<field name="unit_of_measure" class="java.lang.String"/>
+	<field name="unit_value" class="java.math.BigDecimal"/>
+	<field name="total_value" class="java.math.BigDecimal"/>
+	<field name="quantity_per_property_card" class="java.lang.Long"/>
+	<field name="quantity_per_count" class="java.lang.Long"/>
+	<field name="shortage_overage_quantity" class="java.lang.Long"/>
+	<field name="shortage_overage_value" class="java.lang.Long"/>
+	<field name="end_user" class="java.lang.String"/>
+	<field name="remarks" class="java.lang.String"/>
+	<field name="increment_type" class="java.lang.String"/>
+	<group name="account_title_rp_group" isReprintHeaderOnEachPage="true">
+		<groupExpression><![CDATA[$F{account_title_rp_group}]]></groupExpression>
+		<groupHeader>
+			<band height="138">
+				<staticText>
+					<reportElement x="0" y="112" width="75" height="26"/>
+					<box>
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Bookman Old Style" size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ARTICLE]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="75" y="112" width="100" height="26"/>
+					<box>
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Bookman Old Style" size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[DESCRIPTION]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="175" y="112" width="100" height="26"/>
+					<box>
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Bookman Old Style" size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[PROPERTY NUMBER]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="275" y="112" width="74" height="26"/>
+					<box>
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Bookman Old Style" size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ACQUISITION DATE]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="349" y="112" width="60" height="26"/>
+					<box>
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Bookman Old Style" size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[UNIT OF MEASURE]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="409" y="112" width="80" height="26"/>
+					<box>
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Bookman Old Style" size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[UNIT VALUE]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="489" y="112" width="80" height="26"/>
+					<box>
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Bookman Old Style" size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[TOTAL VALUE]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="569" y="112" width="59" height="26"/>
+					<box>
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Bookman Old Style" size="7" isBold="true"/>
+					</textElement>
+					<text><![CDATA[QUANTITY PER PROPERTY CARD]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="628" y="112" width="59" height="26"/>
+					<box>
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Bookman Old Style" size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[QUANTITY PER COUNT]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="687" y="125" width="55" height="13"/>
+					<box>
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Bookman Old Style" size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[QUANTITY]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="742" y="125" width="55" height="13"/>
+					<box>
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Bookman Old Style" size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[VALUE]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="687" y="112" width="110" height="13"/>
+					<box>
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Bookman Old Style" size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[SHORTAGE/OVERAGE]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="797" y="112" width="111" height="26"/>
+					<box>
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Bookman Old Style" size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[END USER]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="908" y="112" width="60" height="26"/>
+					<box>
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Bookman Old Style" size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[REMARKS]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="0" y="0" width="968" height="29"/>
+					<box leftPadding="0">
+						<topPen lineWidth="0.0"/>
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.0"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Bookman Old Style" size="24" isBold="true"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$P{report_group_name}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="0" y="29" width="968" height="19"/>
+					<box leftPadding="0">
+						<topPen lineWidth="0.0"/>
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.0"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Bookman Old Style" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$P{report_account_title}.toUpperCase()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="0" y="48" width="968" height="15"/>
+					<box leftPadding="0">
+						<topPen lineWidth="0.0"/>
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.0"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Bookman Old Style" size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA["As at "+new SimpleDateFormat("yyyy-MM-dd").format($F{date_as_at})]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="0" y="70" width="161" height="18"/>
+					<box>
+						<topPen lineWidth="0.0"/>
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.0"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Bookman Old Style" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Fund Cluster: 01]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="0" y="91" width="968" height="19"/>
+					<box leftPadding="0">
+						<topPen lineWidth="0.0"/>
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.0"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Top">
+						<font fontName="Bookman Old Style" size="10" isBold="true"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA["For which "+$P{C2R1_NAME}+", "+$P{C2R1_TITLE}+", "+$P{report_station}+" is accountable, having assumed such accountability on "+$P{C2R1_DATE_ASSUMPTION}+"." ]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="193">
+				<staticText>
+					<reportElement x="0" y="0" width="489" height="15"/>
+					<box rightPadding="5">
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="Bookman Old Style" size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[TOTAL]]></text>
+				</staticText>
+				<textField pattern="#,###.##;(#,###.##)">
+					<reportElement x="489" y="0" width="80" height="15"/>
+					<box leftPadding="5" rightPadding="5">
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="Bookman Old Style" size="8"/>
+					</textElement>
+					<textFieldExpression class="java.math.BigDecimal"><![CDATA[$P{report_total_value}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="569" y="0" width="399" height="15"/>
+					<box leftPadding="5">
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Bookman Old Style" size="8"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="0" y="23" width="100" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Bookman Old Style" size="8"/>
+					</textElement>
+					<text><![CDATA[Certified Correct:]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement stretchType="RelativeToBandHeight" x="0" y="47" width="212" height="20" isPrintWhenDetailOverflows="true"/>
+					<box leftPadding="5"/>
+					<textElement verticalAlignment="Bottom">
+						<font size="8" isUnderline="true"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$P{C1R1_NAME}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="738" y="23" width="100" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Bookman Old Style" size="8"/>
+					</textElement>
+					<text><![CDATA[Verified by:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="485" y="23" width="100" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Bookman Old Style" size="8"/>
+					</textElement>
+					<text><![CDATA[Approved by:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="245" y="23" width="160" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Bookman Old Style" size="8"/>
+					</textElement>
+					<text><![CDATA[Recommending Approval:]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="0" y="67" width="212" height="20"/>
+					<box leftPadding="5"/>
+					<textElement verticalAlignment="Top">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$P{C1R1_TITLE}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement stretchType="RelativeToBandHeight" x="0" y="94" width="212" height="20" isPrintWhenDetailOverflows="true">
+						<printWhenExpression><![CDATA[!$P{C1R2_NAME}.isEmpty()]]></printWhenExpression>
+					</reportElement>
+					<box leftPadding="5"/>
+					<textElement verticalAlignment="Bottom">
+						<font size="8" isUnderline="true"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$P{C1R2_NAME}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="0" y="114" width="212" height="20">
+						<printWhenExpression><![CDATA[!$P{C1R2_NAME}.isEmpty()]]></printWhenExpression>
+					</reportElement>
+					<box leftPadding="5"/>
+					<textElement verticalAlignment="Top">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$P{C1R2_TITLE}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="0" y="160" width="212" height="20">
+						<printWhenExpression><![CDATA[!$P{C1R3_NAME}.isEmpty()]]></printWhenExpression>
+					</reportElement>
+					<box leftPadding="5"/>
+					<textElement verticalAlignment="Top">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$P{C1R3_TITLE}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement stretchType="RelativeToBandHeight" x="0" y="140" width="212" height="20" isPrintWhenDetailOverflows="true">
+						<printWhenExpression><![CDATA[!$P{C1R3_NAME}.isEmpty()]]></printWhenExpression>
+					</reportElement>
+					<box leftPadding="5"/>
+					<textElement verticalAlignment="Bottom">
+						<font size="8" isUnderline="true"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$P{C1R3_NAME}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement stretchType="RelativeToBandHeight" x="245" y="47" width="212" height="20" isPrintWhenDetailOverflows="true"/>
+					<box leftPadding="5"/>
+					<textElement verticalAlignment="Bottom">
+						<font size="8" isUnderline="true"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$P{C2R1_NAME}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="245" y="67" width="212" height="20"/>
+					<box leftPadding="5"/>
+					<textElement verticalAlignment="Top">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$P{C2R1_TITLE}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement stretchType="RelativeToBandHeight" x="485" y="47" width="212" height="20" isPrintWhenDetailOverflows="true"/>
+					<box leftPadding="5"/>
+					<textElement verticalAlignment="Bottom">
+						<font size="8" isUnderline="true"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$P{C3R1_NAME}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="485" y="67" width="212" height="20"/>
+					<box leftPadding="5"/>
+					<textElement verticalAlignment="Top">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$P{C3R1_TITLE}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="738" y="67" width="212" height="20"/>
+					<box leftPadding="5"/>
+					<textElement verticalAlignment="Top">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$P{C4R1_TITLE}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement stretchType="RelativeToBandHeight" x="738" y="47" width="212" height="20" isPrintWhenDetailOverflows="true"/>
+					<box leftPadding="5"/>
+					<textElement verticalAlignment="Bottom">
+						<font size="8" isUnderline="true"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$P{C4R1_NAME}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="101" splitType="Stretch">
+			<image>
+				<reportElement x="242" y="0" width="500" height="101"/>
+				<imageExpression class="java.lang.String"><![CDATA[$P{REPORT_DIR}+"\\report\\resources\\report_header.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField isStretchWithOverflow="true">
+				<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="75" height="20" isPrintWhenDetailOverflows="true"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bookman Old Style" size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{article}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement stretchType="RelativeToBandHeight" x="75" y="0" width="100" height="20" isPrintWhenDetailOverflows="true"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bookman Old Style" size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{description}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement stretchType="RelativeToBandHeight" x="175" y="0" width="100" height="20" isPrintWhenDetailOverflows="true"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bookman Old Style" size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{property_number}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement stretchType="RelativeToBandHeight" x="275" y="0" width="74" height="20" isPrintWhenDetailOverflows="true"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Bookman Old Style" size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{acquisition_date}==null?"":new SimpleDateFormat("yyyy-MM-dd").format($F{acquisition_date})]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement stretchType="RelativeToBandHeight" x="349" y="0" width="60" height="20" isPrintWhenDetailOverflows="true"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Bookman Old Style" size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{unit_of_measure}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,###.##;(#,###.##)">
+				<reportElement stretchType="RelativeToBandHeight" x="409" y="0" width="80" height="20" isPrintWhenDetailOverflows="true"/>
+				<box leftPadding="4" rightPadding="4">
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Bookman Old Style" size="7"/>
+				</textElement>
+				<textFieldExpression class="java.math.BigDecimal"><![CDATA[$F{unit_value}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,###.##;(#,###.##)">
+				<reportElement stretchType="RelativeToBandHeight" x="489" y="0" width="80" height="20" isPrintWhenDetailOverflows="true">
+					<printWhenExpression><![CDATA[$F{increment_type}.equals("START_PACKAGE")||$F{increment_type}.equals("NORMAL")]]></printWhenExpression>
+				</reportElement>
+				<box leftPadding="4" rightPadding="4">
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Bookman Old Style" size="7"/>
+				</textElement>
+				<textFieldExpression class="java.math.BigDecimal"><![CDATA[$F{total_value}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement stretchType="RelativeToBandHeight" x="569" y="0" width="59" height="20" isPrintWhenDetailOverflows="true"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Bookman Old Style" size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{quantity_per_property_card}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement stretchType="RelativeToBandHeight" x="628" y="0" width="59" height="20" isPrintWhenDetailOverflows="true"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Bookman Old Style" size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{quantity_per_count}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement stretchType="RelativeToBandHeight" x="687" y="0" width="55" height="20" isPrintWhenDetailOverflows="true"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Bookman Old Style" size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{shortage_overage_quantity}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement stretchType="RelativeToBandHeight" x="742" y="0" width="55" height="20" isPrintWhenDetailOverflows="true"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Bookman Old Style" size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{shortage_overage_value}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement stretchType="RelativeToBandHeight" x="797" y="0" width="111" height="20" isPrintWhenDetailOverflows="true"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bookman Old Style" size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{end_user}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement stretchType="RelativeToBandHeight" x="908" y="0" width="60" height="20" isPrintWhenDetailOverflows="true"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bookman Old Style" size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{remarks}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="65" splitType="Stretch">
+			<image>
+				<reportElement x="216" y="4" width="550" height="61"/>
+				<imageExpression class="java.lang.String"><![CDATA[$P{REPORT_DIR}+"\\report\\resources\\report_footer.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="797" y="22" width="100" height="17"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression class="java.lang.String"><![CDATA["Page "+$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="897" y="22" width="12" height="17"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[/]]></text>
+			</staticText>
+			<textField evaluationTime="Report">
+				<reportElement x="909" y="22" width="59" height="17"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>
