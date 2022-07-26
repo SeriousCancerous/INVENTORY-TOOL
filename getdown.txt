@@ -26,6 +26,8 @@ code = report/annex_b_found_at_station_report.jasper
 code = report/annex_b_found_at_station_report.jrxml
 code = report/annex_c_non_existing_report.jasper
 code = report/annex_c_non_existing_report.jrxml
+code = report/rpci_rpcppe_report.jasper
+code = report/rpci_rpcppe_report.jrxml
 code = report/resources/report_footer.png
 code = report/resources/report_header.png
 
