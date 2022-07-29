@@ -30,6 +30,7 @@ code = report/rpci_rpcppe_report.jasper
 code = report/rpci_rpcppe_report.jrxml
 code = report/resources/report_footer.png
 code = report/resources/report_header.png
+code = img/dskits-splashscreen.png
 
 #libraries
 code = bin/lib/zxing-core-3.3.0.jar
