@@ -26,6 +26,9 @@
 	<parameter name="C3R1_NAME" class="java.lang.String"/>
 	<parameter name="C4R1_TITLE" class="java.lang.String"/>
 	<parameter name="C4R1_NAME" class="java.lang.String"/>
+	<parameter name="D1R1_TITLE" class="java.lang.String"/>
+	<parameter name="D1R1_NAME" class="java.lang.String"/>
+	<parameter name="is_division_office" class="java.lang.Boolean"/>
 	<field name="account_title" class="java.lang.String"/>
 	<field name="account_title_rp_group" class="java.lang.String"/>
 	<field name="account_code" class="java.lang.String"/>
@@ -239,7 +242,7 @@
 						<rightPen lineWidth="0.0"/>
 					</box>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
-						<font fontName="Bookman Old Style" size="24" isBold="true"/>
+						<font fontName="Bookman Old Style" size="22" isBold="true"/>
 					</textElement>
 					<textFieldExpression class="java.lang.String"><![CDATA[$P{report_group_name}]]></textFieldExpression>
 				</textField>
@@ -293,7 +296,9 @@
 					<textElement textAlignment="Left" verticalAlignment="Top">
 						<font fontName="Bookman Old Style" size="10" isBold="true"/>
 					</textElement>
-					<textFieldExpression class="java.lang.String"><![CDATA["For which "+$P{C2R1_NAME}+", "+$P{C2R1_TITLE}+", "+$P{report_station}+($P{report_district_municipality}.trim().isEmpty()?"":" / "+$P{report_district_municipality})+" is accountable, having assumed such accountability on "+$P{C2R1_DATE_ASSUMPTION}+"."]]></textFieldExpression>
+					<textFieldExpression class="java.lang.String"><![CDATA["For which "+$P{C2R1_NAME}+", "+$P{C2R1_TITLE}+", "+
+($P{is_division_office}?$P{D1R1_NAME}:$P{report_station}+($P{report_district_municipality}.trim().isEmpty()?"":" / "+$P{report_district_municipality}))
++" is accountable, having assumed such accountability on "+$P{C2R1_DATE_ASSUMPTION}+"."]]></textFieldExpression>
 				</textField>
 			</band>
 		</groupHeader>
@@ -349,7 +354,7 @@
 					<reportElement stretchType="RelativeToBandHeight" x="0" y="47" width="160" height="20" isPrintWhenDetailOverflows="true"/>
 					<box leftPadding="5"/>
 					<textElement verticalAlignment="Bottom">
-						<font size="8" isUnderline="true"/>
+						<font size="8" isBold="true" isUnderline="true"/>
 					</textElement>
 					<textFieldExpression class="java.lang.String"><![CDATA[$P{C1R1_NAME}]]></textFieldExpression>
 				</textField>
@@ -388,7 +393,7 @@
 					</reportElement>
 					<box leftPadding="5"/>
 					<textElement verticalAlignment="Bottom">
-						<font size="8" isUnderline="true"/>
+						<font size="8" isBold="true" isUnderline="true"/>
 					</textElement>
 					<textFieldExpression class="java.lang.String"><![CDATA[$P{C1R2_NAME}]]></textFieldExpression>
 				</textField>
@@ -418,7 +423,7 @@
 					</reportElement>
 					<box leftPadding="5"/>
 					<textElement verticalAlignment="Bottom">
-						<font size="8" isUnderline="true"/>
+						<font size="8" isBold="true" isUnderline="true"/>
 					</textElement>
 					<textFieldExpression class="java.lang.String"><![CDATA[$P{C1R3_NAME}]]></textFieldExpression>
 				</textField>
@@ -426,7 +431,7 @@
 					<reportElement stretchType="RelativeToBandHeight" x="1" y="121" width="212" height="20" isPrintWhenDetailOverflows="true"/>
 					<box leftPadding="5"/>
 					<textElement verticalAlignment="Bottom">
-						<font size="8" isUnderline="true"/>
+						<font size="8" isBold="true" isUnderline="true"/>
 					</textElement>
 					<textFieldExpression class="java.lang.String"><![CDATA[$P{C2R1_NAME}]]></textFieldExpression>
 				</textField>
@@ -442,7 +447,7 @@
 					<reportElement stretchType="RelativeToBandHeight" x="241" y="121" width="212" height="20" isPrintWhenDetailOverflows="true"/>
 					<box leftPadding="5"/>
 					<textElement verticalAlignment="Bottom">
-						<font size="8" isUnderline="true"/>
+						<font size="8" isBold="true" isUnderline="true"/>
 					</textElement>
 					<textFieldExpression class="java.lang.String"><![CDATA[$P{C3R1_NAME}]]></textFieldExpression>
 				</textField>
@@ -466,13 +471,13 @@
 					<reportElement stretchType="RelativeToBandHeight" x="494" y="121" width="212" height="20" isPrintWhenDetailOverflows="true"/>
 					<box leftPadding="5"/>
 					<textElement verticalAlignment="Bottom">
-						<font size="8" isUnderline="true"/>
+						<font size="8" isBold="true" isUnderline="true"/>
 					</textElement>
 					<textFieldExpression class="java.lang.String"><![CDATA[$P{C4R1_NAME}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement stretchType="RelativeToBandHeight" x="556" y="67" width="160" height="20" isPrintWhenDetailOverflows="true">
-						<printWhenExpression><![CDATA[!$P{C1R3_NAME}.isEmpty()]]></printWhenExpression>
+						<printWhenExpression><![CDATA[!$P{C1R4_NAME}.isEmpty()]]></printWhenExpression>
 					</reportElement>
 					<box leftPadding="5"/>
 					<textElement verticalAlignment="Top">
@@ -482,17 +487,17 @@
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement stretchType="RelativeToBandHeight" x="556" y="47" width="160" height="20" isPrintWhenDetailOverflows="true">
-						<printWhenExpression><![CDATA[!$P{C1R3_NAME}.isEmpty()]]></printWhenExpression>
+						<printWhenExpression><![CDATA[!$P{C1R4_NAME}.isEmpty()]]></printWhenExpression>
 					</reportElement>
 					<box leftPadding="5"/>
 					<textElement verticalAlignment="Bottom">
-						<font size="8" isUnderline="true"/>
+						<font size="8" isBold="true" isUnderline="true"/>
 					</textElement>
 					<textFieldExpression class="java.lang.String"><![CDATA[$P{C1R4_NAME}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement stretchType="RelativeToBandHeight" x="736" y="67" width="160" height="20" isPrintWhenDetailOverflows="true">
-						<printWhenExpression><![CDATA[!$P{C1R3_NAME}.isEmpty()]]></printWhenExpression>
+						<printWhenExpression><![CDATA[!$P{C1R5_NAME}.isEmpty()]]></printWhenExpression>
 					</reportElement>
 					<box leftPadding="5"/>
 					<textElement verticalAlignment="Top">
@@ -502,11 +507,11 @@
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement stretchType="RelativeToBandHeight" x="736" y="47" width="160" height="20" isPrintWhenDetailOverflows="true">
-						<printWhenExpression><![CDATA[!$P{C1R3_NAME}.isEmpty()]]></printWhenExpression>
+						<printWhenExpression><![CDATA[!$P{C1R5_NAME}.isEmpty()]]></printWhenExpression>
 					</reportElement>
 					<box leftPadding="5"/>
 					<textElement verticalAlignment="Bottom">
-						<font size="8" isUnderline="true"/>
+						<font size="8" isBold="true" isUnderline="true"/>
 					</textElement>
 					<textFieldExpression class="java.lang.String"><![CDATA[$P{C1R5_NAME}]]></textFieldExpression>
 				</textField>
