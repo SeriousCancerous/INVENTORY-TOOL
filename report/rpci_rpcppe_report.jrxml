@@ -705,9 +705,9 @@
 		</band>
 	</detail>
 	<pageFooter>
-		<band height="65" splitType="Stretch">
+		<band height="61" splitType="Stretch">
 			<image>
-				<reportElement x="181" y="4" width="550" height="61"/>
+				<reportElement x="175" y="0" width="550" height="61"/>
 				<imageExpression class="java.lang.String"><![CDATA[$P{REPORT_DIR}+"\\report\\resources\\report_footer.png"]]></imageExpression>
 			</image>
 			<textField>
