@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rpci_rpcppe_report" language="groovy" pageWidth="936" pageHeight="612" orientation="Landscape" columnWidth="896" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
-	<property name="ireport.zoom" value="1.0"/>
-	<property name="ireport.x" value="0"/>
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="366"/>
 	<property name="ireport.y" value="0"/>
 	<parameter name="REPORT_DIR" class="java.lang.String"/>
 	<parameter name="report_group_name" class="java.lang.String"/>
@@ -29,6 +29,7 @@
 	<parameter name="D1R1_TITLE" class="java.lang.String"/>
 	<parameter name="D1R1_NAME" class="java.lang.String"/>
 	<parameter name="is_division_office" class="java.lang.Boolean"/>
+	<parameter name="report_appendix" class="java.lang.String"/>
 	<field name="account_title" class="java.lang.String"/>
 	<field name="account_title_rp_group" class="java.lang.String"/>
 	<field name="account_code" class="java.lang.String"/>
@@ -130,7 +131,7 @@
 					<text><![CDATA[UNIT VALUE]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="445" y="119" width="54" height="26"/>
+					<reportElement x="445" y="119" width="60" height="26"/>
 					<box>
 						<topPen lineWidth="0.5"/>
 						<leftPen lineWidth="0.5"/>
@@ -143,7 +144,7 @@
 					<text><![CDATA[TOTAL VALUE]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="499" y="119" width="59" height="26"/>
+					<reportElement x="505" y="119" width="59" height="26"/>
 					<box>
 						<topPen lineWidth="0.5"/>
 						<leftPen lineWidth="0.5"/>
@@ -156,7 +157,7 @@
 					<text><![CDATA[QUANTITY PER PROPERTY CARD]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="558" y="119" width="59" height="26"/>
+					<reportElement x="564" y="119" width="59" height="26"/>
 					<box>
 						<topPen lineWidth="0.5"/>
 						<leftPen lineWidth="0.5"/>
@@ -169,7 +170,7 @@
 					<text><![CDATA[QUANTITY PER COUNT]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="617" y="132" width="55" height="13"/>
+					<reportElement x="623" y="132" width="55" height="13"/>
 					<box>
 						<topPen lineWidth="0.5"/>
 						<leftPen lineWidth="0.5"/>
@@ -182,7 +183,7 @@
 					<text><![CDATA[QUANTITY]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="672" y="132" width="55" height="13"/>
+					<reportElement x="678" y="132" width="55" height="13"/>
 					<box>
 						<topPen lineWidth="0.5"/>
 						<leftPen lineWidth="0.5"/>
@@ -195,7 +196,7 @@
 					<text><![CDATA[VALUE]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="617" y="119" width="110" height="13"/>
+					<reportElement x="623" y="119" width="110" height="13"/>
 					<box>
 						<topPen lineWidth="0.5"/>
 						<leftPen lineWidth="0.5"/>
@@ -208,7 +209,7 @@
 					<text><![CDATA[SHORTAGE/OVERAGE]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="727" y="119" width="111" height="26"/>
+					<reportElement x="733" y="119" width="105" height="26"/>
 					<box>
 						<topPen lineWidth="0.5"/>
 						<leftPen lineWidth="0.5"/>
@@ -318,7 +319,7 @@
 					<text><![CDATA[TOTAL]]></text>
 				</staticText>
 				<textField pattern="#,###.##;(#,###.##)">
-					<reportElement x="445" y="0" width="54" height="15"/>
+					<reportElement x="445" y="0" width="60" height="15"/>
 					<box leftPadding="5" rightPadding="5">
 						<topPen lineWidth="0.5"/>
 						<leftPen lineWidth="0.5"/>
@@ -331,7 +332,7 @@
 					<textFieldExpression class="java.math.BigDecimal"><![CDATA[$P{report_total_value}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="499" y="0" width="397" height="15"/>
+					<reportElement x="505" y="0" width="391" height="15"/>
 					<box leftPadding="5">
 						<topPen lineWidth="0.5"/>
 						<leftPen lineWidth="0.5"/>
@@ -523,10 +524,23 @@
 	</background>
 	<title>
 		<band height="101" splitType="Stretch">
-			<image>
-				<reportElement x="242" y="0" width="655" height="101"/>
+			<image hAlign="Center" vAlign="Middle">
+				<reportElement x="1" y="15" width="896" height="86"/>
 				<imageExpression class="java.lang.String"><![CDATA[$P{REPORT_DIR}+"\\report\\resources\\report_header.png"]]></imageExpression>
 			</image>
+			<textField>
+				<reportElement x="1" y="0" width="897" height="15"/>
+				<box leftPadding="0">
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Bookman Old Style" size="10" isBold="false" isItalic="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{report_appendix}]]></textFieldExpression>
+			</textField>
 		</band>
 	</title>
 	<detail>
@@ -610,7 +624,7 @@
 				<textFieldExpression class="java.math.BigDecimal"><![CDATA[$F{unit_value}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" pattern="#,###.##;(#,###.##)">
-				<reportElement stretchType="RelativeToBandHeight" x="445" y="0" width="54" height="20" isPrintWhenDetailOverflows="true">
+				<reportElement stretchType="RelativeToBandHeight" x="445" y="0" width="60" height="20" isPrintWhenDetailOverflows="true">
 					<printWhenExpression><![CDATA[$F{increment_type}.equals("START_PACKAGE")||$F{increment_type}.equals("NORMAL")]]></printWhenExpression>
 				</reportElement>
 				<box leftPadding="4" rightPadding="4">
@@ -625,7 +639,7 @@
 				<textFieldExpression class="java.math.BigDecimal"><![CDATA[$F{total_value}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
-				<reportElement stretchType="RelativeToBandHeight" x="499" y="0" width="59" height="20" isPrintWhenDetailOverflows="true"/>
+				<reportElement stretchType="RelativeToBandHeight" x="505" y="0" width="59" height="20" isPrintWhenDetailOverflows="true"/>
 				<box leftPadding="5">
 					<topPen lineWidth="0.5"/>
 					<leftPen lineWidth="0.5"/>
@@ -638,7 +652,7 @@
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{quantity_per_property_card}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
-				<reportElement stretchType="RelativeToBandHeight" x="558" y="0" width="59" height="20" isPrintWhenDetailOverflows="true"/>
+				<reportElement stretchType="RelativeToBandHeight" x="564" y="0" width="59" height="20" isPrintWhenDetailOverflows="true"/>
 				<box leftPadding="5">
 					<topPen lineWidth="0.5"/>
 					<leftPen lineWidth="0.5"/>
@@ -651,7 +665,7 @@
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{quantity_per_count}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
-				<reportElement stretchType="RelativeToBandHeight" x="617" y="0" width="55" height="20" isPrintWhenDetailOverflows="true"/>
+				<reportElement stretchType="RelativeToBandHeight" x="623" y="0" width="55" height="20" isPrintWhenDetailOverflows="true"/>
 				<box leftPadding="5">
 					<topPen lineWidth="0.5"/>
 					<leftPen lineWidth="0.5"/>
@@ -664,7 +678,7 @@
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{shortage_overage_quantity}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
-				<reportElement stretchType="RelativeToBandHeight" x="672" y="0" width="55" height="20" isPrintWhenDetailOverflows="true"/>
+				<reportElement stretchType="RelativeToBandHeight" x="678" y="0" width="55" height="20" isPrintWhenDetailOverflows="true"/>
 				<box leftPadding="5">
 					<topPen lineWidth="0.5"/>
 					<leftPen lineWidth="0.5"/>
@@ -677,7 +691,7 @@
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{shortage_overage_value}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
-				<reportElement stretchType="RelativeToBandHeight" x="727" y="0" width="111" height="20" isPrintWhenDetailOverflows="true"/>
+				<reportElement stretchType="RelativeToBandHeight" x="733" y="0" width="105" height="20" isPrintWhenDetailOverflows="true"/>
 				<box leftPadding="5">
 					<topPen lineWidth="0.5"/>
 					<leftPen lineWidth="0.5"/>
