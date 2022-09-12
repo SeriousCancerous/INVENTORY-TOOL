@@ -131,7 +131,7 @@
 					<text><![CDATA[UNIT VALUE]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="445" y="119" width="60" height="26"/>
+					<reportElement x="445" y="119" width="70" height="26"/>
 					<box>
 						<topPen lineWidth="0.5"/>
 						<leftPen lineWidth="0.5"/>
@@ -144,7 +144,7 @@
 					<text><![CDATA[TOTAL VALUE]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="505" y="119" width="59" height="26"/>
+					<reportElement x="515" y="119" width="59" height="26"/>
 					<box>
 						<topPen lineWidth="0.5"/>
 						<leftPen lineWidth="0.5"/>
@@ -157,7 +157,7 @@
 					<text><![CDATA[QUANTITY PER PROPERTY CARD]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="564" y="119" width="59" height="26"/>
+					<reportElement x="574" y="119" width="59" height="26"/>
 					<box>
 						<topPen lineWidth="0.5"/>
 						<leftPen lineWidth="0.5"/>
@@ -170,7 +170,7 @@
 					<text><![CDATA[QUANTITY PER COUNT]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="623" y="132" width="55" height="13"/>
+					<reportElement x="633" y="132" width="55" height="13"/>
 					<box>
 						<topPen lineWidth="0.5"/>
 						<leftPen lineWidth="0.5"/>
@@ -183,7 +183,7 @@
 					<text><![CDATA[QUANTITY]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="678" y="132" width="55" height="13"/>
+					<reportElement x="688" y="132" width="55" height="13"/>
 					<box>
 						<topPen lineWidth="0.5"/>
 						<leftPen lineWidth="0.5"/>
@@ -196,7 +196,7 @@
 					<text><![CDATA[VALUE]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="623" y="119" width="110" height="13"/>
+					<reportElement x="633" y="119" width="110" height="13"/>
 					<box>
 						<topPen lineWidth="0.5"/>
 						<leftPen lineWidth="0.5"/>
@@ -209,7 +209,7 @@
 					<text><![CDATA[SHORTAGE/OVERAGE]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="733" y="119" width="105" height="26"/>
+					<reportElement x="743" y="119" width="95" height="26"/>
 					<box>
 						<topPen lineWidth="0.5"/>
 						<leftPen lineWidth="0.5"/>
@@ -319,7 +319,7 @@
 					<text><![CDATA[TOTAL]]></text>
 				</staticText>
 				<textField pattern="#,###.##;(#,###.##)">
-					<reportElement x="445" y="0" width="60" height="15"/>
+					<reportElement x="445" y="0" width="70" height="15"/>
 					<box leftPadding="5" rightPadding="5">
 						<topPen lineWidth="0.5"/>
 						<leftPen lineWidth="0.5"/>
@@ -332,7 +332,7 @@
 					<textFieldExpression class="java.math.BigDecimal"><![CDATA[$P{report_total_value}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="505" y="0" width="391" height="15"/>
+					<reportElement x="515" y="0" width="381" height="15"/>
 					<box leftPadding="5">
 						<topPen lineWidth="0.5"/>
 						<leftPen lineWidth="0.5"/>
@@ -624,7 +624,7 @@
 				<textFieldExpression class="java.math.BigDecimal"><![CDATA[$F{unit_value}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" pattern="#,###.##;(#,###.##)">
-				<reportElement stretchType="RelativeToBandHeight" x="445" y="0" width="60" height="20" isPrintWhenDetailOverflows="true">
+				<reportElement stretchType="RelativeToBandHeight" x="445" y="0" width="70" height="20" isPrintWhenDetailOverflows="true">
 					<printWhenExpression><![CDATA[$F{increment_type}.equals("START_PACKAGE")||$F{increment_type}.equals("NORMAL")]]></printWhenExpression>
 				</reportElement>
 				<box leftPadding="4" rightPadding="4">
@@ -639,7 +639,7 @@
 				<textFieldExpression class="java.math.BigDecimal"><![CDATA[$F{total_value}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
-				<reportElement stretchType="RelativeToBandHeight" x="505" y="0" width="59" height="20" isPrintWhenDetailOverflows="true"/>
+				<reportElement stretchType="RelativeToBandHeight" x="515" y="0" width="59" height="20" isPrintWhenDetailOverflows="true"/>
 				<box leftPadding="5">
 					<topPen lineWidth="0.5"/>
 					<leftPen lineWidth="0.5"/>
@@ -652,7 +652,7 @@
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{quantity_per_property_card}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
-				<reportElement stretchType="RelativeToBandHeight" x="564" y="0" width="59" height="20" isPrintWhenDetailOverflows="true"/>
+				<reportElement stretchType="RelativeToBandHeight" x="574" y="0" width="59" height="20" isPrintWhenDetailOverflows="true"/>
 				<box leftPadding="5">
 					<topPen lineWidth="0.5"/>
 					<leftPen lineWidth="0.5"/>
@@ -665,7 +665,7 @@
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{quantity_per_count}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
-				<reportElement stretchType="RelativeToBandHeight" x="623" y="0" width="55" height="20" isPrintWhenDetailOverflows="true"/>
+				<reportElement stretchType="RelativeToBandHeight" x="633" y="0" width="55" height="20" isPrintWhenDetailOverflows="true"/>
 				<box leftPadding="5">
 					<topPen lineWidth="0.5"/>
 					<leftPen lineWidth="0.5"/>
@@ -678,7 +678,7 @@
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{shortage_overage_quantity}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
-				<reportElement stretchType="RelativeToBandHeight" x="678" y="0" width="55" height="20" isPrintWhenDetailOverflows="true"/>
+				<reportElement stretchType="RelativeToBandHeight" x="688" y="0" width="55" height="20" isPrintWhenDetailOverflows="true"/>
 				<box leftPadding="5">
 					<topPen lineWidth="0.5"/>
 					<leftPen lineWidth="0.5"/>
@@ -691,7 +691,7 @@
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{shortage_overage_value}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
-				<reportElement stretchType="RelativeToBandHeight" x="733" y="0" width="105" height="20" isPrintWhenDetailOverflows="true"/>
+				<reportElement stretchType="RelativeToBandHeight" x="743" y="0" width="95" height="20" isPrintWhenDetailOverflows="true"/>
 				<box leftPadding="5">
 					<topPen lineWidth="0.5"/>
 					<leftPen lineWidth="0.5"/>
