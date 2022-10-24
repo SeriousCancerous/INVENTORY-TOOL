@@ -76,6 +76,7 @@ code = bin/lib/jasperreports-applet-4.5.0.jar
 code = bin/lib/jasperreports-fonts-4.5.0.jar
 code = bin/lib/jasperreports-javaflow-4.5.0.jar
 code = bin/lib/jaxen-1.1.1.jar
+code = bin/lib/jcalendar-1.4.jar
 code = bin/lib/jcommon-1.0.15.jar
 code = bin/lib/jdt-compiler-3.1.1.jar
 code = bin/lib/jfreechart-1.0.12.jar
