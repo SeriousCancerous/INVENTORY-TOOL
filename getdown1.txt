@@ -30,6 +30,8 @@ code = report/status_per_description_report.jasper
 code = report/status_per_description_report.jrxml
 code = report/rpci_rpcppe_report.jasper
 code = report/rpci_rpcppe_report.jrxml
+code = report/summary_of_properties_per_accountable_person.jasper
+code = report/summary_of_properties_per_accountable_person.jrxml
 code = report/resources/report_footer.png
 code = report/resources/report_header.png
 code = img/dskits-splashscreen.png
@@ -37,7 +39,6 @@ code = img/dskits-splashscreen.png
 #libraries
 code = bin/lib/zxing-core-3.3.0.jar
 code = bin/lib/zxing-javase-3.3.0.jar
-
 
 #other libs
 code = bin/lib/ant-1.7.1.jar
@@ -76,6 +77,7 @@ code = bin/lib/jasperreports-applet-4.5.0.jar
 code = bin/lib/jasperreports-fonts-4.5.0.jar
 code = bin/lib/jasperreports-javaflow-4.5.0.jar
 code = bin/lib/jaxen-1.1.1.jar
+code = bin/lib/jcalendar-1.4.jar
 code = bin/lib/jcommon-1.0.15.jar
 code = bin/lib/jdt-compiler-3.1.1.jar
 code = bin/lib/jfreechart-1.0.12.jar
@@ -100,13 +102,9 @@ code = bin/lib/xercesImpl-2.7.0.jar
 code = bin/lib/xml-apis.jar
 code = bin/lib/xml-apis-ext.jar
 
-
 #resources image
 resource = img/launcher-background.png
 resource = img/progress-background.png
-
-
-
 
 # The main entry point for the application
 class = dsk.inventory.tool.main.MainFrame
