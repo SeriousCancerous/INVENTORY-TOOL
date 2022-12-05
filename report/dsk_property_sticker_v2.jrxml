@@ -48,13 +48,13 @@
 					<printWhenExpression><![CDATA[$F{package_acquisition_cost}>=50000
     ||$F{acquisition_cost}>=50000]]></printWhenExpression>
 				</reportElement>
-				<imageExpression class="java.lang.String"><![CDATA[$P{REPORT_DIR}+"\\report\\background\\sticker_yellow_v2.jpeg"]]></imageExpression>
+				<imageExpression class="java.lang.String"><![CDATA[$P{REPORT_DIR}+"/report/background/sticker_yellow_v2.jpeg"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="2" y="2" width="286" height="170">
 					<printWhenExpression><![CDATA[!($F{acquisition_cost}>=50000) && !($F{package_acquisition_cost}>=50000)]]></printWhenExpression>
 				</reportElement>
-				<imageExpression class="java.lang.String"><![CDATA[$P{REPORT_DIR}+"\\report\\background\\sticker_green_v2.jpeg"]]></imageExpression>
+				<imageExpression class="java.lang.String"><![CDATA[$P{REPORT_DIR}+"/report/background/sticker_green_v2.jpeg"]]></imageExpression>
 			</image>
 			<image scaleImage="FillFrame">
 				<reportElement x="173" y="40" width="95" height="95"/>
