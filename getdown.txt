@@ -40,7 +40,6 @@ code = img/dskits-splashscreen.png
 code = bin/lib/zxing-core-3.3.0.jar
 code = bin/lib/zxing-javase-3.3.0.jar
 
-
 #other libs
 code = bin/lib/ant-1.7.1.jar
 code = bin/lib/barbecue-1.5-beta1.jar
@@ -103,13 +102,9 @@ code = bin/lib/xercesImpl-2.7.0.jar
 code = bin/lib/xml-apis.jar
 code = bin/lib/xml-apis-ext.jar
 
-
 #resources image
 resource = img/launcher-background.png
 resource = img/progress-background.png
-
-
-
 
 # The main entry point for the application
 class = dsk.inventory.tool.main.MainFrame
