@@ -271,7 +271,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="Arial" size="10" isBold="false"/>
 					</textElement>
-					<textFieldExpression class="java.lang.String"><![CDATA["As at "+new SimpleDateFormat("yyyy-MM-dd").format($F{date_as_at})]]></textFieldExpression>
+					<textFieldExpression class="java.lang.String"><![CDATA["As of "+new SimpleDateFormat("MMMM dd, yyyy").format($F{date_as_at})]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement x="0" y="70" width="161" height="18"/>
