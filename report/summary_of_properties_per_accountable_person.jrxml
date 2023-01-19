@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rpci_rpcppe_report" language="groovy" pageWidth="936" pageHeight="612" orientation="Landscape" columnWidth="896" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
-	<property name="ireport.zoom" value="5.0"/>
-	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="0"/>
+	<property name="ireport.zoom" value="3.0"/>
+	<property name="ireport.x" value="1118"/>
+	<property name="ireport.y" value="566"/>
 	<parameter name="REPORT_DIR" class="java.lang.String"/>
 	<parameter name="accountable_person_name" class="java.lang.String"/>
 	<parameter name="date_as_at" class="java.util.Date"/>
@@ -411,9 +411,7 @@
 				<textFieldExpression class="java.math.BigDecimal"><![CDATA[$F{unit_value}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" pattern="#,###.##;(#,###.##)">
-				<reportElement stretchType="RelativeToBandHeight" x="491" y="0" width="70" height="20" isPrintWhenDetailOverflows="true">
-					<printWhenExpression><![CDATA[$F{increment_type}.equals("START_PACKAGE")||$F{increment_type}.equals("NORMAL")]]></printWhenExpression>
-				</reportElement>
+				<reportElement stretchType="RelativeToBandHeight" x="491" y="0" width="70" height="20" isPrintWhenDetailOverflows="true"/>
 				<box leftPadding="4" rightPadding="4">
 					<topPen lineWidth="0.5"/>
 					<leftPen lineWidth="0.5"/>
