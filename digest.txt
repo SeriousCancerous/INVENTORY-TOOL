@@ -1,5 +1,5 @@
 getdown.txt = 097d43d3d96853ccf5200e43bdf526dd
-bin/dsk.inventory.tool.jar = a44aa2305bba5ce50f5f31841d5b89f8
+bin/dsk.inventory.tool.jar = a7e11153c7c64c552a4ebc8c8d39f923
 template/inventory-tool-data-entry.xls = eb941450305a51b7f0e0cad3c06af07d
 dir_articles/dir_articles.xls = 04cc8882fa57256892fff3c568378068
 report/dsk_property_sticker_v2.jasper = a4d1ad85d5dc1a84ecc15e60f6fd8208
@@ -85,4 +85,4 @@ bin/lib/xml-apis.jar = 6583f898377a5d39e74a3e6bac44db46
 bin/lib/xml-apis-ext.jar = 70d5c222b5494d59c1b5f049947401e6
 img/launcher-background.png = 685b2e7f391753489e2f202a868e070f
 img/progress-background.png = 2e8a599613d9de7b9670f406fbc8b3d8
-digest.txt = ac4d71cf10d33bab49e723692f2bdcb8
+digest.txt = 8ec2c6a94588a63ee44f3cf2bb2f685a
