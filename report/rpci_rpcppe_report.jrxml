@@ -21,7 +21,7 @@
 	<parameter name="C1R5_NAME" class="java.lang.String"/>
 	<parameter name="C2R1_TITLE" class="java.lang.String"/>
 	<parameter name="C2R1_NAME" class="java.lang.String"/>
-	<parameter name="C2R1_DATE_ASSUMPTION" class="java.lang.String"/>
+	<parameter name="C1R1_DATE_ASSUMPTION" class="java.lang.String"/>
 	<parameter name="C3R1_TITLE" class="java.lang.String"/>
 	<parameter name="C3R1_NAME" class="java.lang.String"/>
 	<parameter name="C4R1_TITLE" class="java.lang.String"/>
@@ -297,9 +297,9 @@
 					<textElement textAlignment="Left" verticalAlignment="Top">
 						<font fontName="Arial" size="10" isBold="true"/>
 					</textElement>
-					<textFieldExpression class="java.lang.String"><![CDATA["For which "+$P{C2R1_NAME}+", "+$P{C2R1_TITLE}+", "+
+					<textFieldExpression class="java.lang.String"><![CDATA["For which "+$P{C1R1_NAME}+", "+$P{C1R1_TITLE}+", "+
 ($P{is_division_office}?$P{D1R1_NAME}:$P{report_station}+($P{report_district_municipality}.trim().isEmpty()?"":" / "+$P{report_district_municipality}))
-+" is accountable, having assumed such accountability on "+$P{C2R1_DATE_ASSUMPTION}+"."]]></textFieldExpression>
++" is accountable, having assumed such accountability on "+$P{C1R1_DATE_ASSUMPTION}+"."]]></textFieldExpression>
 				</textField>
 			</band>
 		</groupHeader>
