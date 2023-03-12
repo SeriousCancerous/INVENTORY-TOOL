@@ -1,34 +1,488 @@
-2022/07/21 14:05:37:896 INFO m.a: ------------------ VM Info ------------------
-2022/07/21 14:05:37:901 INFO m.a: -- OS Name: Windows 10
-2022/07/21 14:05:37:901 INFO m.a: -- OS Arch: amd64
-2022/07/21 14:05:37:901 INFO m.a: -- OS Vers: 10.0
-2022/07/21 14:05:37:901 INFO m.a: -- Java Vers: 11.0.15
-2022/07/21 14:05:37:902 INFO m.a: -- Java Home: C:\Program Files\Java\jdk-11.0.15
-2022/07/21 14:05:37:902 INFO m.a: -- User Name: Cancerous
-2022/07/21 14:05:37:902 INFO m.a: -- User Home: C:\Users\Cancerous
-2022/07/21 14:05:37:902 INFO m.a: -- Cur dir: D:\DEVELOPMENT\JAVA\InventoryTool
-2022/07/21 14:05:37:902 INFO m.a: ---------------------------------------------
-2022/07/21 14:05:37:955 INFO m.a: Failed to find proxy settings in Windows registry [error=java.lang.UnsatisfiedLinkError: no jRegistryKey in java.library.path: [C:\Program Files\Java\jdk-11.0.15\bin, C:\WINDOWS\Sun\Java\bin, C:\WINDOWS\system32, C:\WINDOWS, C:\Program Files\Common Files\Oracle\Java\javapath, C:\WINDOWS\system32, C:\WINDOWS, C:\WINDOWS\System32\Wbem, C:\WINDOWS\System32\WindowsPowerShell\v1.0\, C:\WINDOWS\System32\OpenSSH\, C:\Program Files\MySQL\MySQL Utilities 1.6\, C:\Program Files\Git\cmd, C:\Program Files\nodejs\, D:\DEVELOPMENT\SDK\flutter\bin, C:\platform-tools, C:\Users\Cancerous\AppData\Local\Microsoft\WindowsApps, C:\Users\Cancerous\AppData\Roaming\npm, C:\Users\Cancerous\AppData\Local\Programs\Microsoft VS Code\bin, C:\Program Files\heroku\bin, D:\DEVELOPMENT\SDK\flutter\bin, C:\platform-tools, ., .]]
-2022/07/21 14:05:37:958 INFO m.a: ---------------- Proxy Info -----------------
-2022/07/21 14:05:37:959 INFO m.a: -- Proxy Host: null
-2022/07/21 14:05:37:959 INFO m.a: -- Proxy Port: null
-2022/07/21 14:05:37:959 INFO m.a: ---------------------------------------------
-2022/07/21 14:05:37:968 INFO m.a: Able to lock for updates: true
-2022/07/21 14:05:38:007 INFO m.a: Verifying application: https://github.com/SeriousCancerous/INVENTORY-TOOL/blob/master/
-2022/07/21 14:05:38:008 INFO m.a: Version: -1
-2022/07/21 14:05:38:008 INFO m.a: Class: dsk.inventory.tool.main.MainFrame
-2022/07/21 14:05:38:008 INFO m.a: Dropping status 'm.validating'.
-2022/07/21 14:05:38:018 INFO m.a: Attempting to refetch 'digest.txt' from 'https://github.com/SeriousCancerous/INVENTORY-TOOL/blob/master/digest.txt'.
-2022/07/21 14:05:39:287 INFO m.a: No signers, not verifying file [path=digest.txt]
-2022/07/21 14:05:39:288 INFO m.a: Attempting to refetch 'digest2.txt' from 'https://github.com/SeriousCancerous/INVENTORY-TOOL/blob/master/digest2.txt'.
-2022/07/21 14:05:39:765 INFO m.a: No signers, not verifying file [path=digest2.txt]
-2022/07/21 14:05:39:793 WARNING m.a: Failed to refresh non-versioned digest: m.invalid_digest_file|~|~0d9bd2bc01c18dfdca9e6128832856a9b16a74d80ecec4e2c8d87cfa4ec25853. Proceeding...
-2022/07/21 14:05:40:071 INFO m.a: Verified resources [count=70, size=49174k, duration=276ms]
-2022/07/21 14:05:40:072 INFO m.a: Installing 0 downloaded resources:
-2022/07/21 14:05:40:072 INFO m.a: Install completed.
-2022/07/21 14:05:40:076 INFO m.a: Didn't find any custom environment variables, not setting any.
-2022/07/21 14:05:40:076 INFO m.a: Running C:\Program Files\Java\jdk-11.0.15\bin\javaw.exe
-  -classpath
-  D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\dsk.inventory.tool.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\template\inventory-tool-data-entry.xls;D:\DEVELOPMENT\JAVA\InventoryTool\files\dir_articles\dir_articles.xls;D:\DEVELOPMENT\JAVA\InventoryTool\files\report\dsk_property_sticker_v2.jasper;D:\DEVELOPMENT\JAVA\InventoryTool\files\report\dsk_property_sticker_v2.jrxml;D:\DEVELOPMENT\JAVA\InventoryTool\files\report\background\sticker_green_v2.jpeg;D:\DEVELOPMENT\JAVA\InventoryTool\files\report\background\sticker_yellow_v2.jpeg;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\zxing-core-3.3.0.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\zxing-javase-3.3.0.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\ant-1.7.1.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\barbecue-1.5-beta1.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\barcode4j-2.0.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\batik-anim.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\batik-awt-util.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\batik-bridge.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\batik-css.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\batik-dom.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\batik-ext.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\batik-gvt.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\batik-parser.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\batik-script.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\batik-svg-dom.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\batik-svggen.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\batik-util.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\batik-xml.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\bcel-5.2.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\bsh-2.0b4.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\castor-1.2.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\commons-beanutils-1.8.0.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\commons-collections-3.1.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\commons-digester-1.7.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\commons-javaflow-20060411.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\commons-logging-1.0.4.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\commons-logging-1.1.2.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\common-util.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\groovy-all-1.7.5.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\hsqldb-1.8.0-10.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\iText-2.1.7.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\jackson-core-lgpl-1.7.4.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\jackson-mapper-lgpl-1.7.4.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\jasperreports-4.5.0.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\jasperreports-applet-4.5.0.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\jasperreports-fonts-4.5.0.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\jasperreports-javaflow-4.5.0.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\jaxen-1.1.1.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\jcommon-1.0.15.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\jdt-compiler-3.1.1.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\jfreechart-1.0.12.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\jpa.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\jxl-2.6.10.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\log4j-1.2.15.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\mondrian-3.1.1.12687.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\png-encoder-1.5.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\poi-3.7-20101029.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\poi-ooxml-3.7-20101029.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\poi-ooxml-schemas-3.7-20101029.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\rhino-1.7R1.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\saaj-api-1.3.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\serializer.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\servlet.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\spring-beans-2.5.5.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\spring-core-2.5.5.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\velocity-1.7-dep.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\xalan-2.7.1.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\xbean.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\xercesImpl-2.7.0.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\xml-apis.jar;D:\DEVELOPMENT\JAVA\InventoryTool\files\bin\lib\xml-apis-ext.jar
-  -Dcom.threerings.getdown=true
-  dsk.inventory.tool.main.MainFrame
+2023/03/12 22:10:47:291 INFO m.a: ------------------ VM Info ------------------
+2023/03/12 22:10:47:297 INFO m.a: -- OS Name: Windows 10
+2023/03/12 22:10:47:297 INFO m.a: -- OS Arch: amd64
+2023/03/12 22:10:47:297 INFO m.a: -- OS Vers: 10.0
+2023/03/12 22:10:47:297 INFO m.a: -- Java Vers: 11.0.15
+2023/03/12 22:10:47:297 INFO m.a: -- Java Home: C:\Program Files\Java\jdk-11.0.15
+2023/03/12 22:10:47:297 INFO m.a: -- User Name: Emile
+2023/03/12 22:10:47:297 INFO m.a: -- User Home: C:\Users\Emile
+2023/03/12 22:10:47:297 INFO m.a: -- Cur dir: D:\DEVELOPMENT\JAVA\dsk.inventory.tool\gitrepo
+2023/03/12 22:10:47:298 INFO m.a: ---------------------------------------------
+2023/03/12 22:10:47:354 INFO m.a: Failed to find proxy settings in Windows registry [error=java.lang.UnsatisfiedLinkError: no jRegistryKey in java.library.path: [C:\Program Files\Java\jdk-11.0.15\bin, C:\Windows\Sun\Java\bin, C:\Windows\system32, C:\Windows, C:\Program Files\Common Files\Oracle\Java\javapath, C:\ProgramData\Oracle\Java\javapath, C:\Windows\system32, C:\Windows, C:\Windows\System32\Wbem, C:\Windows\System32\WindowsPowerShell\v1.0\, C:\Windows\System32\OpenSSH\, C:\ProgramData\chocolatey\bin, C:\Program Files\Git\cmd, C:\Program Files\nodejs\, C:\Program Files\MySQL\MySQL Utilities 1.6\, C:\adb\platform-tools, C:\Users\Emile\AppData\Local\Microsoft\WindowsApps, C:\Users\Emile\AppData\Roaming\npm, C:\Users\Emile\AppData\Local\Programs\Microsoft VS Code\bin, .]]
+2023/03/12 22:10:47:357 INFO m.a: ---------------- Proxy Info -----------------
+2023/03/12 22:10:47:358 INFO m.a: -- Proxy Host: null
+2023/03/12 22:10:47:358 INFO m.a: -- Proxy Port: null
+2023/03/12 22:10:47:358 INFO m.a: ---------------------------------------------
+2023/03/12 22:10:47:370 INFO m.a: Able to lock for updates: true
+2023/03/12 22:10:47:419 INFO m.a: Verifying application: https://raw.githubusercontent.com/SeriousCancerous/INVENTORY-TOOL/master/
+2023/03/12 22:10:47:419 INFO m.a: Version: -1
+2023/03/12 22:10:47:419 INFO m.a: Class: dsk.inventory.tool.main.MainFrame
+2023/03/12 22:10:47:420 INFO m.a: Dropping status 'm.validating'.
+2023/03/12 22:10:47:430 INFO m.a: Attempting to refetch 'digest.txt' from 'https://raw.githubusercontent.com/SeriousCancerous/INVENTORY-TOOL/master/digest.txt'.
+2023/03/12 22:10:48:009 INFO m.a: No signers, not verifying file [path=digest.txt]
+2023/03/12 22:10:48:010 INFO m.a: Attempting to refetch 'digest2.txt' from 'https://raw.githubusercontent.com/SeriousCancerous/INVENTORY-TOOL/master/digest2.txt'.
+2023/03/12 22:10:48:052 INFO m.a: No signers, not verifying file [path=digest2.txt]
+2023/03/12 22:10:48:060 INFO m.a: Resource failed digest check [rsrc=getdown.txt, computed=9f64da00262be73d73e5a4c2373b316f1191a9383e478e6fc052269269e3579c, expected=2ff4a9c00c3abd7ba896d3fc0f6c03f04681b3732f18fcedc146909ed23b5e7f]
+2023/03/12 22:10:48:061 INFO m.a: Attempting to refetch 'getdown.txt' from 'https://raw.githubusercontent.com/SeriousCancerous/INVENTORY-TOOL/master/getdown.txt'.
+2023/03/12 22:10:48:100 INFO m.a: Attempting to refetch 'digest.txt' from 'https://raw.githubusercontent.com/SeriousCancerous/INVENTORY-TOOL/master/digest.txt'.
+2023/03/12 22:10:48:139 INFO m.a: No signers, not verifying file [path=digest.txt]
+2023/03/12 22:10:48:141 INFO m.a: Attempting to refetch 'digest2.txt' from 'https://raw.githubusercontent.com/SeriousCancerous/INVENTORY-TOOL/master/digest2.txt'.
+2023/03/12 22:10:48:184 INFO m.a: No signers, not verifying file [path=digest2.txt]
+2023/03/12 22:10:48:197 INFO m.a: Resource failed digest check [rsrc=getdown.txt, computed=10de29c8a9692380e453dcf83879a3bed6e3b5b028793cf04086ff7515439077, expected=2ff4a9c00c3abd7ba896d3fc0f6c03f04681b3732f18fcedc146909ed23b5e7f]
+2023/03/12 22:10:48:198 WARNING m.a: getdown.txt failed to validate even after redownloading. Blindly forging onward.
+2023/03/12 22:10:48:208 INFO m.a: Resource failed digest check [rsrc=template/inventory-tool-data-entry.xls, computed=b2c16a58193a5bdfa83c2f399ef83e06ff1a29e8cc25a041fa5e2e0feeae6b0e, expected=f8f0e42d365997fc6e3e12c1bad74cb5fd8395dfe9cfda62b2d982e02d716414]
+2023/03/12 22:10:48:210 INFO m.a: Resource failed digest check [rsrc=bin/dsk.inventory.tool.jar, computed=0acd4da81adb66fe41a49abfc23a9d9ade0ddc2684e383554cca2c0cdf453f09, expected=3b8a5e4b9f9a0fdaa80f207223aea13564dd55af553b98a8c7402e7b37fa31c6]
+2023/03/12 22:10:48:212 INFO m.a: Resource failed digest check [rsrc=report/rspi_annex_a7_report.jasper, error=java.io.FileNotFoundException: files\report\rspi_annex_a7_report.jasper (The system cannot find the file specified)]
+2023/03/12 22:10:48:212 INFO m.a: Resource failed digest check [rsrc=report/rspi_annex_a7_report.jrxml, error=java.io.FileNotFoundException: files\report\rspi_annex_a7_report.jrxml (The system cannot find the file specified)]
+2023/03/12 22:10:48:216 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-constants-1.14.jar, computed=3e4192385dcb04e482746590f9f537228795638ebdc3c9e06081bc066c8c5e57, expected=null]
+2023/03/12 22:10:48:219 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-ext-1.14.jar, computed=7d933603f356fcc5bbe42012389ec6fe5d6d88b13ca83208536182a9f9467678, expected=null]
+2023/03/12 22:10:48:224 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-i18n-1.14.jar, computed=73c126c4c0f5e2af8c9b2ebc0ed841048b7729fcd9472b27660521c2a01019c9, expected=null]
+2023/03/12 22:10:48:229 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-dom-1.14.jar, computed=de9e9bb2075e2df2e8388e7dbf598b9f5a526731cd3b32e1fc951f9b6034182b, expected=null]
+2023/03/12 22:10:48:230 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-codec-1.14.jar, computed=2dcb91408a4cadf7e1bfc28e32b493d7577d51a671fc2dd11b83481e92072d5d, expected=null]
+2023/03/12 22:10:48:231 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-shared-resources-1.14.jar, computed=2220948e6ff71f8b20a36fcbfbadcc69347fc043747116c5538821bf35cbfeae, expected=null]
+2023/03/12 22:10:48:233 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-script-1.14.jar, computed=bd6bca3ba0cbb881e25a3862e14287d59159e2e805f8b5965daf5b3f0a83da17, expected=null]
+2023/03/12 22:10:48:238 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-gvt-1.14.jar, computed=1bb44c7e00bd81135fb0c233332579f93be4bcca37c429274b5c4eb44b071616, expected=null]
+2023/03/12 22:10:48:248 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-svg-dom-1.14.jar, computed=90801ecfea40cebc0084219a515bba5cd93ea1effb838ce620cbf4bffdf6b82a, expected=null]
+2023/03/12 22:10:48:249 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-awt-util-1.14.jar, computed=85a464c01f4bc90949dd3127282abe0d1bbebfa9645e96037909734649bd83da, expected=null]
+2023/03/12 22:10:48:250 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-xml-1.14.jar, computed=f2451158a17873c1a85d9ec5cda4b228aae7a87da7e932e37b1cc213b0dde9c8, expected=null]
+2023/03/12 22:10:48:252 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-transcoder-1.14.jar, computed=ef4fbe1fd90de22bd093acbde19052ce42cc6c66d2bc7895f455f774dcdd8a71, expected=null]
+2023/03/12 22:10:48:258 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-svggen-1.14.jar, computed=1d4d0505d888e2f2515a2286ca60df28e0563cde13c92a74f96edfce05f06ebc, expected=null]
+2023/03/12 22:10:48:276 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-util-1.14.jar, computed=1325194cc0e498649de90deb00fe85f7607135acf84dbe6bd02753f039711ce8, expected=null]
+2023/03/12 22:10:48:280 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-anim-1.14.jar, computed=02764c37f035f569f827d40aef44373728cf7a8d5eddc5e5e4f0a242f7044537, expected=null]
+2023/03/12 22:10:48:300 INFO m.a: Resource failed digest check [rsrc=bin/lib/commons-io-2.11.0.jar, computed=d916d0f028337f9244045aa5a01bcf47c9ee6a0e427d193ad66d220f60a58275, expected=null]
+2023/03/12 22:10:48:303 INFO m.a: Resource failed digest check [rsrc=bin/lib/commons-logging-1.2.jar, computed=010df8aed4f6f4a7fd6e80dd4029331cacc856f60037f50a75c7fb629bac22f6, expected=null]
+2023/03/12 22:10:48:312 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-bridge-1.14.jar, computed=c2f8cf0e0eaa39d73e5ae05f7974b4ebbfe30f3c1e89f36bd7fcf4d209805846, expected=null]
+2023/03/12 22:10:48:314 INFO m.a: Resource failed digest check [rsrc=bin/lib/curvesapi-1.07.jar, computed=646643180a083e7d711ab07a32231891ee6dc6889315fa39d5c3f2c660bd3636, expected=null]
+2023/03/12 22:10:48:318 INFO m.a: Resource failed digest check [rsrc=bin/lib/graphics2d-0.40.jar, computed=fec4a1e856cbe7e9d2d33bb6ab7fb4907e827e244e65eefb6565c01a03faf0b7, expected=null]
+2023/03/12 22:10:48:344 INFO m.a: Resource failed digest check [rsrc=bin/lib/commons-collections4-4.4.jar, computed=3ac1c19a540e019053f76c007b645c07c1d36e1f0a6214bb2b5437d18fe09ce0, expected=null]
+2023/03/12 22:10:48:347 INFO m.a: Resource failed digest check [rsrc=bin/lib/commons-codec-1.15.jar, computed=b44e02758bb234eec9a8eaf70b381a1bde84f78518f99b1d932909057a5bb2ba, expected=null]
+2023/03/12 22:10:48:349 INFO m.a: Resource failed digest check [rsrc=bin/lib/jakarta.activation-2.0.1.jar, computed=78cba4193d95d4d5762e94593480840a8d9937ebce8a6b404322d620fc4e96d9, expected=null]
+2023/03/12 22:10:48:357 INFO m.a: Resource failed digest check [rsrc=bin/lib/jakarta.xml.bind-api-3.0.1.jar, computed=15bc5dd73f75643bdfd3fa865fd2a3c26fb2b73a19f7b72cbc8bcea57540c3df, expected=null]
+2023/03/12 22:10:48:374 INFO m.a: Resource failed digest check [rsrc=bin/lib/commons-compress-1.21.jar, computed=63d768b2fd147a1f69d435d9a36174fb1a0bfd2f8ce5fb9d4fbda2f03d73708e, expected=null]
+2023/03/12 22:10:48:391 INFO m.a: Resource failed digest check [rsrc=bin/lib/commons-math3-3.6.1.jar, computed=86be5910a5bc453ef0b6235ce3b643aaf99a87d3021eaa4974ed0cfea2fd4a28, expected=null]
+2023/03/12 22:10:48:417 INFO m.a: Resource failed digest check [rsrc=bin/lib/log4j-api-2.18.0.jar, computed=b390762a007088207bbf5cf1639f1966c5aac33796b9f542fd0205271db70cb7, expected=null]
+2023/03/12 22:10:48:440 INFO m.a: Resource failed digest check [rsrc=bin/lib/fontbox-2.0.26.jar, computed=476ec39fbff0adf2fc0d02a332de2c62a000259b37b1a8c400d038a54fb813c2, expected=null]
+2023/03/12 22:10:48:451 INFO m.a: Resource failed digest check [rsrc=bin/lib/bcutil-jdk15on-1.70.jar, computed=6a7e027dd389fe83bb24a8c422310a137b2c3a1e3d7ed11290d44b83ce86693d, expected=null]
+2023/03/12 22:10:48:472 INFO m.a: Resource failed digest check [rsrc=bin/lib/bcpkix-jdk15on-1.70.jar, computed=5527508926ab4c4235c4f7a1bc1b8f423ee6b237b3c2069f12449ad4bbc5cfaa, expected=null]
+2023/03/12 22:10:48:511 INFO m.a: Resource failed digest check [rsrc=bin/lib/poi-ooxml-5.2.3.jar, computed=6666697bfa817d1c883c50e258de03229172b4642b571048ff264336bb7c60cb, expected=null]
+2023/03/12 22:10:48:531 INFO m.a: Resource failed digest check [rsrc=bin/lib/SparseBitSet-1.2.jar, computed=e2fad0566799ca4617b925fa487995d210fafbc497a80ff8d61cf41a1d849cd9, expected=null]
+2023/03/12 22:10:48:531 INFO m.a: Resource failed digest check [rsrc=bin/lib/slf4j-api-1.7.36.jar, computed=ed0946373a973aef8ada76f936e0f767f9a7500f405b67e4f756a47fa9696aa6, expected=null]
+2023/03/12 22:10:48:543 INFO m.a: Resource failed digest check [rsrc=bin/lib/poi-scratchpad-5.2.3.jar, computed=ff8ebb6a4543aaf7a8816c39fcb14fe5ceba26c4973049e5a6c71544f0bcae50, expected=null]
+2023/03/12 22:10:48:570 INFO m.a: Resource failed digest check [rsrc=poi-5.2.3.jar, error=java.nio.file.NoSuchFileException: files\poi-5.2.3.jar]
+2023/03/12 22:10:48:577 INFO m.a: Resource failed digest check [rsrc=poi-excelant-5.2.3.jar, error=java.nio.file.NoSuchFileException: files\poi-excelant-5.2.3.jar]
+2023/03/12 22:10:48:592 INFO m.a: Resource failed digest check [rsrc=bin/lib/xml-apis-ext-1.3.04.jar, computed=4e018ad6d3db15f9e0f4f549e140f84c0e03db455ef660941231f07c2f16e57d, expected=null]
+2023/03/12 22:10:48:577 INFO m.a: Resource failed digest check [rsrc=poi-examples-5.2.3.jar, error=java.nio.file.NoSuchFileException: files\poi-examples-5.2.3.jar]
+2023/03/12 22:10:48:577 INFO m.a: Resource failed digest check [rsrc=poi-javadoc-5.2.3.jar, error=java.nio.file.NoSuchFileException: files\poi-javadoc-5.2.3.jar]
+2023/03/12 22:10:48:625 INFO m.a: Resource failed digest check [rsrc=bin/lib/pdfbox-2.0.26.jar, computed=aac2ac73ca8de26895a9bf6f598af26eedc7a05401fc7b7239fa537a3e1af064, expected=null]
+2023/03/12 22:10:48:625 INFO m.a: Resource failed digest check [rsrc=bin/lib/xmlgraphics-commons-2.6.jar, computed=5a708c885dec9e8fc186e18b5f937a57120fca33e1c1e38e956d27c56dba1527, expected=null]
+2023/03/12 22:10:48:596 INFO m.a: Resource failed digest check [rsrc=bin/lib/xml-apis-1.4.01.jar, computed=ffc82c86d6cd3e8f69329267c5dc1f98e7cefe8d9c982aa8913033ad1f4b1a98, expected=null]
+2023/03/12 22:10:48:667 INFO m.a: Resource failed digest check [rsrc=bin/lib/xmlsec-3.0.0.jar, computed=615b3b32657c4e5a9f3b18a49f456cadfd383954d11c5198ea3a0a8ed1928fe9, expected=null]
+2023/03/12 22:10:48:671 INFO m.a: Resource failed digest check [rsrc=bin/lib/xmlbeans-5.1.1.jar, computed=40b2edeadb0a9a293caf1d79636db7635cfcdfc6c91e7a755c153e75de8d7463, expected=null]
+2023/03/12 22:10:48:677 INFO m.a: Resource failed digest check [rsrc=bin/lib/poi-ooxml-lite-5.2.3.jar, computed=a47ab5fc81c0cdf755398f03a7eb5cad6e44e8c8a1264d9bea2648d146004384, expected=null]
+2023/03/12 22:10:48:776 INFO m.a: Resource failed digest check [rsrc=bin/lib/bcprov-jdk15on-1.70.jar, computed=cb8c96cd2d00e5879f9594e87c64c14d058db27d0fab2801742acbc786edfcdb, expected=null]
+2023/03/12 22:10:48:876 INFO m.a: Resource failed digest check [rsrc=bin/lib/poi-ooxml-full-5.2.3.jar, computed=14bbac55d072164a83bcec11c26764ee81b878d71e666fe4d7d7cf97b9d0fb81, expected=null]
+2023/03/12 22:10:48:877 INFO m.a: Verified resources [count=135, size=96456k, duration=678ms]
+2023/03/12 22:10:48:877 INFO m.a: 51 of 135 rsrcs require update (0 assumed valid).
+2023/03/12 22:10:49:283 WARNING m.a: Download failed [rsrc=null]
+java.io.FileNotFoundException: https://raw.githubusercontent.com/SeriousCancerous/INVENTORY-TOOL/master/poi-javadoc-5.2.3.jar
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1974)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1969)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1968)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1536)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1520)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:250)
+	at com.threerings.getdown.net.HTTPDownloader.checkSize(Unknown Source)
+	at com.threerings.getdown.net.Downloader.discoverSize(Unknown Source)
+	at com.threerings.getdown.net.Downloader.download(Unknown Source)
+	at com.threerings.getdown.launcher.Getdown.download(Unknown Source)
+	at com.threerings.getdown.launcher.Getdown.getdown(Unknown Source)
+	at com.threerings.getdown.launcher.Getdown.run(Unknown Source)
+Caused by: java.io.FileNotFoundException: https://raw.githubusercontent.com/SeriousCancerous/INVENTORY-TOOL/master/poi-javadoc-5.2.3.jar
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1920)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1520)
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:527)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:334)
+	... 6 more
+2023/03/12 22:10:49:284 INFO m.a: Verifying application: https://raw.githubusercontent.com/SeriousCancerous/INVENTORY-TOOL/master/
+2023/03/12 22:10:49:284 INFO m.a: Version: -1
+2023/03/12 22:10:49:284 INFO m.a: Class: dsk.inventory.tool.main.MainFrame
+2023/03/12 22:10:49:285 INFO m.a: Attempting to refetch 'digest.txt' from 'https://raw.githubusercontent.com/SeriousCancerous/INVENTORY-TOOL/master/digest.txt'.
+2023/03/12 22:10:49:367 INFO m.a: No signers, not verifying file [path=digest.txt]
+2023/03/12 22:10:49:368 INFO m.a: Attempting to refetch 'digest2.txt' from 'https://raw.githubusercontent.com/SeriousCancerous/INVENTORY-TOOL/master/digest2.txt'.
+2023/03/12 22:10:49:504 INFO m.a: No signers, not verifying file [path=digest2.txt]
+2023/03/12 22:10:49:511 INFO m.a: Resource failed digest check [rsrc=getdown.txt, computed=10de29c8a9692380e453dcf83879a3bed6e3b5b028793cf04086ff7515439077, expected=2ff4a9c00c3abd7ba896d3fc0f6c03f04681b3732f18fcedc146909ed23b5e7f]
+2023/03/12 22:10:49:511 INFO m.a: Attempting to refetch 'getdown.txt' from 'https://raw.githubusercontent.com/SeriousCancerous/INVENTORY-TOOL/master/getdown.txt'.
+2023/03/12 22:10:49:625 INFO m.a: Attempting to refetch 'digest.txt' from 'https://raw.githubusercontent.com/SeriousCancerous/INVENTORY-TOOL/master/digest.txt'.
+2023/03/12 22:10:49:694 INFO m.a: No signers, not verifying file [path=digest.txt]
+2023/03/12 22:10:49:695 INFO m.a: Attempting to refetch 'digest2.txt' from 'https://raw.githubusercontent.com/SeriousCancerous/INVENTORY-TOOL/master/digest2.txt'.
+2023/03/12 22:10:49:813 INFO m.a: No signers, not verifying file [path=digest2.txt]
+2023/03/12 22:10:49:831 INFO m.a: Resource failed digest check [rsrc=getdown.txt, computed=10de29c8a9692380e453dcf83879a3bed6e3b5b028793cf04086ff7515439077, expected=2ff4a9c00c3abd7ba896d3fc0f6c03f04681b3732f18fcedc146909ed23b5e7f]
+2023/03/12 22:10:49:831 WARNING m.a: getdown.txt failed to validate even after redownloading. Blindly forging onward.
+2023/03/12 22:10:49:847 INFO m.a: Resource failed digest check [rsrc=template/inventory-tool-data-entry.xls, computed=b2c16a58193a5bdfa83c2f399ef83e06ff1a29e8cc25a041fa5e2e0feeae6b0e, expected=f8f0e42d365997fc6e3e12c1bad74cb5fd8395dfe9cfda62b2d982e02d716414]
+2023/03/12 22:10:49:849 INFO m.a: Resource failed digest check [rsrc=bin/dsk.inventory.tool.jar, computed=0acd4da81adb66fe41a49abfc23a9d9ade0ddc2684e383554cca2c0cdf453f09, expected=3b8a5e4b9f9a0fdaa80f207223aea13564dd55af553b98a8c7402e7b37fa31c6]
+2023/03/12 22:10:49:849 INFO m.a: Resource failed digest check [rsrc=report/rspi_annex_a7_report.jasper, error=java.io.FileNotFoundException: files\report\rspi_annex_a7_report.jasper (The system cannot find the file specified)]
+2023/03/12 22:10:49:850 INFO m.a: Resource failed digest check [rsrc=report/rspi_annex_a7_report.jrxml, error=java.io.FileNotFoundException: files\report\rspi_annex_a7_report.jrxml (The system cannot find the file specified)]
+2023/03/12 22:10:49:853 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-constants-1.14.jar, computed=3e4192385dcb04e482746590f9f537228795638ebdc3c9e06081bc066c8c5e57, expected=null]
+2023/03/12 22:10:49:854 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-ext-1.14.jar, computed=7d933603f356fcc5bbe42012389ec6fe5d6d88b13ca83208536182a9f9467678, expected=null]
+2023/03/12 22:10:49:855 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-codec-1.14.jar, computed=2dcb91408a4cadf7e1bfc28e32b493d7577d51a671fc2dd11b83481e92072d5d, expected=null]
+2023/03/12 22:10:49:855 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-i18n-1.14.jar, computed=73c126c4c0f5e2af8c9b2ebc0ed841048b7729fcd9472b27660521c2a01019c9, expected=null]
+2023/03/12 22:10:49:857 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-script-1.14.jar, computed=bd6bca3ba0cbb881e25a3862e14287d59159e2e805f8b5965daf5b3f0a83da17, expected=null]
+2023/03/12 22:10:49:858 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-shared-resources-1.14.jar, computed=2220948e6ff71f8b20a36fcbfbadcc69347fc043747116c5538821bf35cbfeae, expected=null]
+2023/03/12 22:10:49:861 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-gvt-1.14.jar, computed=1bb44c7e00bd81135fb0c233332579f93be4bcca37c429274b5c4eb44b071616, expected=null]
+2023/03/12 22:10:49:861 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-awt-util-1.14.jar, computed=85a464c01f4bc90949dd3127282abe0d1bbebfa9645e96037909734649bd83da, expected=null]
+2023/03/12 22:10:49:864 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-transcoder-1.14.jar, computed=ef4fbe1fd90de22bd093acbde19052ce42cc6c66d2bc7895f455f774dcdd8a71, expected=null]
+2023/03/12 22:10:49:865 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-xml-1.14.jar, computed=f2451158a17873c1a85d9ec5cda4b228aae7a87da7e932e37b1cc213b0dde9c8, expected=null]
+2023/03/12 22:10:49:866 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-util-1.14.jar, computed=1325194cc0e498649de90deb00fe85f7607135acf84dbe6bd02753f039711ce8, expected=null]
+2023/03/12 22:10:49:867 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-anim-1.14.jar, computed=02764c37f035f569f827d40aef44373728cf7a8d5eddc5e5e4f0a242f7044537, expected=null]
+2023/03/12 22:10:49:864 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-dom-1.14.jar, computed=de9e9bb2075e2df2e8388e7dbf598b9f5a526731cd3b32e1fc951f9b6034182b, expected=null]
+2023/03/12 22:10:49:867 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-svg-dom-1.14.jar, computed=90801ecfea40cebc0084219a515bba5cd93ea1effb838ce620cbf4bffdf6b82a, expected=null]
+2023/03/12 22:10:49:869 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-svggen-1.14.jar, computed=1d4d0505d888e2f2515a2286ca60df28e0563cde13c92a74f96edfce05f06ebc, expected=null]
+2023/03/12 22:10:49:872 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-bridge-1.14.jar, computed=c2f8cf0e0eaa39d73e5ae05f7974b4ebbfe30f3c1e89f36bd7fcf4d209805846, expected=null]
+2023/03/12 22:10:49:878 INFO m.a: Resource failed digest check [rsrc=bin/lib/commons-codec-1.15.jar, computed=b44e02758bb234eec9a8eaf70b381a1bde84f78518f99b1d932909057a5bb2ba, expected=null]
+2023/03/12 22:10:49:880 INFO m.a: Resource failed digest check [rsrc=bin/lib/commons-logging-1.2.jar, computed=010df8aed4f6f4a7fd6e80dd4029331cacc856f60037f50a75c7fb629bac22f6, expected=null]
+2023/03/12 22:10:49:885 INFO m.a: Resource failed digest check [rsrc=bin/lib/commons-io-2.11.0.jar, computed=d916d0f028337f9244045aa5a01bcf47c9ee6a0e427d193ad66d220f60a58275, expected=null]
+2023/03/12 22:10:49:886 INFO m.a: Resource failed digest check [rsrc=bin/lib/graphics2d-0.40.jar, computed=fec4a1e856cbe7e9d2d33bb6ab7fb4907e827e244e65eefb6565c01a03faf0b7, expected=null]
+2023/03/12 22:10:49:886 INFO m.a: Resource failed digest check [rsrc=bin/lib/curvesapi-1.07.jar, computed=646643180a083e7d711ab07a32231891ee6dc6889315fa39d5c3f2c660bd3636, expected=null]
+2023/03/12 22:10:49:892 INFO m.a: Resource failed digest check [rsrc=bin/lib/commons-collections4-4.4.jar, computed=3ac1c19a540e019053f76c007b645c07c1d36e1f0a6214bb2b5437d18fe09ce0, expected=null]
+2023/03/12 22:10:49:897 INFO m.a: Resource failed digest check [rsrc=bin/lib/jakarta.activation-2.0.1.jar, computed=78cba4193d95d4d5762e94593480840a8d9937ebce8a6b404322d620fc4e96d9, expected=null]
+2023/03/12 22:10:49:898 INFO m.a: Resource failed digest check [rsrc=bin/lib/commons-compress-1.21.jar, computed=63d768b2fd147a1f69d435d9a36174fb1a0bfd2f8ce5fb9d4fbda2f03d73708e, expected=null]
+2023/03/12 22:10:49:897 INFO m.a: Resource failed digest check [rsrc=bin/lib/jakarta.xml.bind-api-3.0.1.jar, computed=15bc5dd73f75643bdfd3fa865fd2a3c26fb2b73a19f7b72cbc8bcea57540c3df, expected=null]
+2023/03/12 22:10:49:916 INFO m.a: Resource failed digest check [rsrc=bin/lib/fontbox-2.0.26.jar, computed=476ec39fbff0adf2fc0d02a332de2c62a000259b37b1a8c400d038a54fb813c2, expected=null]
+2023/03/12 22:10:49:928 INFO m.a: Resource failed digest check [rsrc=bin/lib/log4j-api-2.18.0.jar, computed=b390762a007088207bbf5cf1639f1966c5aac33796b9f542fd0205271db70cb7, expected=null]
+2023/03/12 22:10:49:931 INFO m.a: Resource failed digest check [rsrc=poi-5.2.3.jar, error=java.nio.file.NoSuchFileException: files\poi-5.2.3.jar]
+2023/03/12 22:10:49:932 INFO m.a: Resource failed digest check [rsrc=poi-examples-5.2.3.jar, error=java.nio.file.NoSuchFileException: files\poi-examples-5.2.3.jar]
+2023/03/12 22:10:49:932 INFO m.a: Resource failed digest check [rsrc=poi-excelant-5.2.3.jar, error=java.nio.file.NoSuchFileException: files\poi-excelant-5.2.3.jar]
+2023/03/12 22:10:49:932 INFO m.a: Resource failed digest check [rsrc=poi-javadoc-5.2.3.jar, error=java.nio.file.NoSuchFileException: files\poi-javadoc-5.2.3.jar]
+2023/03/12 22:10:49:938 INFO m.a: Resource failed digest check [rsrc=bin/lib/bcutil-jdk15on-1.70.jar, computed=6a7e027dd389fe83bb24a8c422310a137b2c3a1e3d7ed11290d44b83ce86693d, expected=null]
+2023/03/12 22:10:49:945 INFO m.a: Resource failed digest check [rsrc=bin/lib/bcpkix-jdk15on-1.70.jar, computed=5527508926ab4c4235c4f7a1bc1b8f423ee6b237b3c2069f12449ad4bbc5cfaa, expected=null]
+2023/03/12 22:10:49:951 INFO m.a: Resource failed digest check [rsrc=bin/lib/commons-math3-3.6.1.jar, computed=86be5910a5bc453ef0b6235ce3b643aaf99a87d3021eaa4974ed0cfea2fd4a28, expected=null]
+2023/03/12 22:10:49:958 INFO m.a: Resource failed digest check [rsrc=bin/lib/slf4j-api-1.7.36.jar, computed=ed0946373a973aef8ada76f936e0f767f9a7500f405b67e4f756a47fa9696aa6, expected=null]
+2023/03/12 22:10:49:960 INFO m.a: Resource failed digest check [rsrc=bin/lib/SparseBitSet-1.2.jar, computed=e2fad0566799ca4617b925fa487995d210fafbc497a80ff8d61cf41a1d849cd9, expected=null]
+2023/03/12 22:10:49:978 INFO m.a: Resource failed digest check [rsrc=bin/lib/pdfbox-2.0.26.jar, computed=aac2ac73ca8de26895a9bf6f598af26eedc7a05401fc7b7239fa537a3e1af064, expected=null]
+2023/03/12 22:10:49:996 INFO m.a: Resource failed digest check [rsrc=bin/lib/poi-ooxml-5.2.3.jar, computed=6666697bfa817d1c883c50e258de03229172b4642b571048ff264336bb7c60cb, expected=null]
+2023/03/12 22:10:50:008 INFO m.a: Resource failed digest check [rsrc=bin/lib/xml-apis-1.4.01.jar, computed=ffc82c86d6cd3e8f69329267c5dc1f98e7cefe8d9c982aa8913033ad1f4b1a98, expected=null]
+2023/03/12 22:10:50:010 INFO m.a: Resource failed digest check [rsrc=bin/lib/xml-apis-ext-1.3.04.jar, computed=4e018ad6d3db15f9e0f4f549e140f84c0e03db455ef660941231f07c2f16e57d, expected=null]
+2023/03/12 22:10:50:055 INFO m.a: Resource failed digest check [rsrc=bin/lib/xmlgraphics-commons-2.6.jar, computed=5a708c885dec9e8fc186e18b5f937a57120fca33e1c1e38e956d27c56dba1527, expected=null]
+2023/03/12 22:10:50:063 INFO m.a: Resource failed digest check [rsrc=bin/lib/xmlsec-3.0.0.jar, computed=615b3b32657c4e5a9f3b18a49f456cadfd383954d11c5198ea3a0a8ed1928fe9, expected=null]
+2023/03/12 22:10:50:091 INFO m.a: Resource failed digest check [rsrc=bin/lib/xmlbeans-5.1.1.jar, computed=40b2edeadb0a9a293caf1d79636db7635cfcdfc6c91e7a755c153e75de8d7463, expected=null]
+2023/03/12 22:10:50:092 INFO m.a: Resource failed digest check [rsrc=bin/lib/poi-scratchpad-5.2.3.jar, computed=ff8ebb6a4543aaf7a8816c39fcb14fe5ceba26c4973049e5a6c71544f0bcae50, expected=null]
+2023/03/12 22:10:50:141 INFO m.a: Resource failed digest check [rsrc=bin/lib/poi-ooxml-lite-5.2.3.jar, computed=a47ab5fc81c0cdf755398f03a7eb5cad6e44e8c8a1264d9bea2648d146004384, expected=null]
+2023/03/12 22:10:50:185 INFO m.a: Resource failed digest check [rsrc=bin/lib/bcprov-jdk15on-1.70.jar, computed=cb8c96cd2d00e5879f9594e87c64c14d058db27d0fab2801742acbc786edfcdb, expected=null]
+2023/03/12 22:10:50:349 INFO m.a: Resource failed digest check [rsrc=bin/lib/poi-ooxml-full-5.2.3.jar, computed=14bbac55d072164a83bcec11c26764ee81b878d71e666fe4d7d7cf97b9d0fb81, expected=null]
+2023/03/12 22:10:50:349 INFO m.a: Verified resources [count=135, size=96456k, duration=517ms]
+2023/03/12 22:10:50:350 INFO m.a: 51 of 135 rsrcs require update (0 assumed valid).
+2023/03/12 22:10:50:385 WARNING m.a: Download failed [rsrc=null]
+java.io.FileNotFoundException: https://raw.githubusercontent.com/SeriousCancerous/INVENTORY-TOOL/master/poi-javadoc-5.2.3.jar
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1974)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1969)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1968)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1536)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1520)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:250)
+	at com.threerings.getdown.net.HTTPDownloader.checkSize(Unknown Source)
+	at com.threerings.getdown.net.Downloader.discoverSize(Unknown Source)
+	at com.threerings.getdown.net.Downloader.download(Unknown Source)
+	at com.threerings.getdown.launcher.Getdown.download(Unknown Source)
+	at com.threerings.getdown.launcher.Getdown.getdown(Unknown Source)
+	at com.threerings.getdown.launcher.Getdown.run(Unknown Source)
+Caused by: java.io.FileNotFoundException: https://raw.githubusercontent.com/SeriousCancerous/INVENTORY-TOOL/master/poi-javadoc-5.2.3.jar
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1920)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1520)
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:527)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:334)
+	... 6 more
+2023/03/12 22:10:50:385 INFO m.a: Verifying application: https://raw.githubusercontent.com/SeriousCancerous/INVENTORY-TOOL/master/
+2023/03/12 22:10:50:385 INFO m.a: Version: -1
+2023/03/12 22:10:50:385 INFO m.a: Class: dsk.inventory.tool.main.MainFrame
+2023/03/12 22:10:50:386 INFO m.a: Attempting to refetch 'digest.txt' from 'https://raw.githubusercontent.com/SeriousCancerous/INVENTORY-TOOL/master/digest.txt'.
+2023/03/12 22:10:50:427 INFO m.a: No signers, not verifying file [path=digest.txt]
+2023/03/12 22:10:50:428 INFO m.a: Attempting to refetch 'digest2.txt' from 'https://raw.githubusercontent.com/SeriousCancerous/INVENTORY-TOOL/master/digest2.txt'.
+2023/03/12 22:10:50:467 INFO m.a: No signers, not verifying file [path=digest2.txt]
+2023/03/12 22:10:50:473 INFO m.a: Resource failed digest check [rsrc=getdown.txt, computed=10de29c8a9692380e453dcf83879a3bed6e3b5b028793cf04086ff7515439077, expected=2ff4a9c00c3abd7ba896d3fc0f6c03f04681b3732f18fcedc146909ed23b5e7f]
+2023/03/12 22:10:50:473 INFO m.a: Attempting to refetch 'getdown.txt' from 'https://raw.githubusercontent.com/SeriousCancerous/INVENTORY-TOOL/master/getdown.txt'.
+2023/03/12 22:10:50:545 INFO m.a: Attempting to refetch 'digest.txt' from 'https://raw.githubusercontent.com/SeriousCancerous/INVENTORY-TOOL/master/digest.txt'.
+2023/03/12 22:10:50:585 INFO m.a: No signers, not verifying file [path=digest.txt]
+2023/03/12 22:10:50:586 INFO m.a: Attempting to refetch 'digest2.txt' from 'https://raw.githubusercontent.com/SeriousCancerous/INVENTORY-TOOL/master/digest2.txt'.
+2023/03/12 22:10:50:631 INFO m.a: No signers, not verifying file [path=digest2.txt]
+2023/03/12 22:10:50:648 INFO m.a: Resource failed digest check [rsrc=getdown.txt, computed=10de29c8a9692380e453dcf83879a3bed6e3b5b028793cf04086ff7515439077, expected=2ff4a9c00c3abd7ba896d3fc0f6c03f04681b3732f18fcedc146909ed23b5e7f]
+2023/03/12 22:10:50:648 WARNING m.a: getdown.txt failed to validate even after redownloading. Blindly forging onward.
+2023/03/12 22:10:50:652 INFO m.a: Resource failed digest check [rsrc=template/inventory-tool-data-entry.xls, computed=b2c16a58193a5bdfa83c2f399ef83e06ff1a29e8cc25a041fa5e2e0feeae6b0e, expected=f8f0e42d365997fc6e3e12c1bad74cb5fd8395dfe9cfda62b2d982e02d716414]
+2023/03/12 22:10:50:653 INFO m.a: Resource failed digest check [rsrc=bin/dsk.inventory.tool.jar, computed=0acd4da81adb66fe41a49abfc23a9d9ade0ddc2684e383554cca2c0cdf453f09, expected=3b8a5e4b9f9a0fdaa80f207223aea13564dd55af553b98a8c7402e7b37fa31c6]
+2023/03/12 22:10:50:653 INFO m.a: Resource failed digest check [rsrc=report/rspi_annex_a7_report.jrxml, error=java.io.FileNotFoundException: files\report\rspi_annex_a7_report.jrxml (The system cannot find the file specified)]
+2023/03/12 22:10:50:655 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-constants-1.14.jar, computed=3e4192385dcb04e482746590f9f537228795638ebdc3c9e06081bc066c8c5e57, expected=null]
+2023/03/12 22:10:50:653 INFO m.a: Resource failed digest check [rsrc=report/rspi_annex_a7_report.jasper, error=java.io.FileNotFoundException: files\report\rspi_annex_a7_report.jasper (The system cannot find the file specified)]
+2023/03/12 22:10:50:656 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-codec-1.14.jar, computed=2dcb91408a4cadf7e1bfc28e32b493d7577d51a671fc2dd11b83481e92072d5d, expected=null]
+2023/03/12 22:10:50:657 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-i18n-1.14.jar, computed=73c126c4c0f5e2af8c9b2ebc0ed841048b7729fcd9472b27660521c2a01019c9, expected=null]
+2023/03/12 22:10:50:660 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-ext-1.14.jar, computed=7d933603f356fcc5bbe42012389ec6fe5d6d88b13ca83208536182a9f9467678, expected=null]
+2023/03/12 22:10:50:661 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-shared-resources-1.14.jar, computed=2220948e6ff71f8b20a36fcbfbadcc69347fc043747116c5538821bf35cbfeae, expected=null]
+2023/03/12 22:10:50:662 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-dom-1.14.jar, computed=de9e9bb2075e2df2e8388e7dbf598b9f5a526731cd3b32e1fc951f9b6034182b, expected=null]
+2023/03/12 22:10:50:666 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-script-1.14.jar, computed=bd6bca3ba0cbb881e25a3862e14287d59159e2e805f8b5965daf5b3f0a83da17, expected=null]
+2023/03/12 22:10:50:668 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-anim-1.14.jar, computed=02764c37f035f569f827d40aef44373728cf7a8d5eddc5e5e4f0a242f7044537, expected=null]
+2023/03/12 22:10:50:668 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-transcoder-1.14.jar, computed=ef4fbe1fd90de22bd093acbde19052ce42cc6c66d2bc7895f455f774dcdd8a71, expected=null]
+2023/03/12 22:10:50:669 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-xml-1.14.jar, computed=f2451158a17873c1a85d9ec5cda4b228aae7a87da7e932e37b1cc213b0dde9c8, expected=null]
+2023/03/12 22:10:50:669 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-svggen-1.14.jar, computed=1d4d0505d888e2f2515a2286ca60df28e0563cde13c92a74f96edfce05f06ebc, expected=null]
+2023/03/12 22:10:50:669 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-util-1.14.jar, computed=1325194cc0e498649de90deb00fe85f7607135acf84dbe6bd02753f039711ce8, expected=null]
+2023/03/12 22:10:50:672 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-gvt-1.14.jar, computed=1bb44c7e00bd81135fb0c233332579f93be4bcca37c429274b5c4eb44b071616, expected=null]
+2023/03/12 22:10:50:672 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-awt-util-1.14.jar, computed=85a464c01f4bc90949dd3127282abe0d1bbebfa9645e96037909734649bd83da, expected=null]
+2023/03/12 22:10:50:676 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-bridge-1.14.jar, computed=c2f8cf0e0eaa39d73e5ae05f7974b4ebbfe30f3c1e89f36bd7fcf4d209805846, expected=null]
+2023/03/12 22:10:50:678 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-svg-dom-1.14.jar, computed=90801ecfea40cebc0084219a515bba5cd93ea1effb838ce620cbf4bffdf6b82a, expected=null]
+2023/03/12 22:10:50:688 INFO m.a: Resource failed digest check [rsrc=bin/lib/commons-logging-1.2.jar, computed=010df8aed4f6f4a7fd6e80dd4029331cacc856f60037f50a75c7fb629bac22f6, expected=null]
+2023/03/12 22:10:50:688 INFO m.a: Resource failed digest check [rsrc=bin/lib/commons-codec-1.15.jar, computed=b44e02758bb234eec9a8eaf70b381a1bde84f78518f99b1d932909057a5bb2ba, expected=null]
+2023/03/12 22:10:50:690 INFO m.a: Resource failed digest check [rsrc=bin/lib/curvesapi-1.07.jar, computed=646643180a083e7d711ab07a32231891ee6dc6889315fa39d5c3f2c660bd3636, expected=null]
+2023/03/12 22:10:50:692 INFO m.a: Resource failed digest check [rsrc=bin/lib/commons-io-2.11.0.jar, computed=d916d0f028337f9244045aa5a01bcf47c9ee6a0e427d193ad66d220f60a58275, expected=null]
+2023/03/12 22:10:50:695 INFO m.a: Resource failed digest check [rsrc=bin/lib/graphics2d-0.40.jar, computed=fec4a1e856cbe7e9d2d33bb6ab7fb4907e827e244e65eefb6565c01a03faf0b7, expected=null]
+2023/03/12 22:10:50:705 INFO m.a: Resource failed digest check [rsrc=bin/lib/jakarta.activation-2.0.1.jar, computed=78cba4193d95d4d5762e94593480840a8d9937ebce8a6b404322d620fc4e96d9, expected=null]
+2023/03/12 22:10:50:708 INFO m.a: Resource failed digest check [rsrc=bin/lib/jakarta.xml.bind-api-3.0.1.jar, computed=15bc5dd73f75643bdfd3fa865fd2a3c26fb2b73a19f7b72cbc8bcea57540c3df, expected=null]
+2023/03/12 22:10:50:712 INFO m.a: Resource failed digest check [rsrc=bin/lib/bcutil-jdk15on-1.70.jar, computed=6a7e027dd389fe83bb24a8c422310a137b2c3a1e3d7ed11290d44b83ce86693d, expected=null]
+2023/03/12 22:10:50:724 INFO m.a: Resource failed digest check [rsrc=bin/lib/commons-collections4-4.4.jar, computed=3ac1c19a540e019053f76c007b645c07c1d36e1f0a6214bb2b5437d18fe09ce0, expected=null]
+2023/03/12 22:10:50:727 INFO m.a: Resource failed digest check [rsrc=bin/lib/commons-compress-1.21.jar, computed=63d768b2fd147a1f69d435d9a36174fb1a0bfd2f8ce5fb9d4fbda2f03d73708e, expected=null]
+2023/03/12 22:10:50:732 INFO m.a: Resource failed digest check [rsrc=bin/lib/bcpkix-jdk15on-1.70.jar, computed=5527508926ab4c4235c4f7a1bc1b8f423ee6b237b3c2069f12449ad4bbc5cfaa, expected=null]
+2023/03/12 22:10:50:734 INFO m.a: Resource failed digest check [rsrc=bin/lib/fontbox-2.0.26.jar, computed=476ec39fbff0adf2fc0d02a332de2c62a000259b37b1a8c400d038a54fb813c2, expected=null]
+2023/03/12 22:10:50:743 INFO m.a: Resource failed digest check [rsrc=bin/lib/log4j-api-2.18.0.jar, computed=b390762a007088207bbf5cf1639f1966c5aac33796b9f542fd0205271db70cb7, expected=null]
+2023/03/12 22:10:50:744 INFO m.a: Resource failed digest check [rsrc=poi-5.2.3.jar, error=java.nio.file.NoSuchFileException: files\poi-5.2.3.jar]
+2023/03/12 22:10:50:747 INFO m.a: Resource failed digest check [rsrc=poi-excelant-5.2.3.jar, error=java.nio.file.NoSuchFileException: files\poi-excelant-5.2.3.jar]
+2023/03/12 22:10:50:748 INFO m.a: Resource failed digest check [rsrc=poi-javadoc-5.2.3.jar, error=java.nio.file.NoSuchFileException: files\poi-javadoc-5.2.3.jar]
+2023/03/12 22:10:50:745 INFO m.a: Resource failed digest check [rsrc=poi-examples-5.2.3.jar, error=java.nio.file.NoSuchFileException: files\poi-examples-5.2.3.jar]
+2023/03/12 22:10:50:760 INFO m.a: Resource failed digest check [rsrc=bin/lib/commons-math3-3.6.1.jar, computed=86be5910a5bc453ef0b6235ce3b643aaf99a87d3021eaa4974ed0cfea2fd4a28, expected=null]
+2023/03/12 22:10:50:791 INFO m.a: Resource failed digest check [rsrc=bin/lib/SparseBitSet-1.2.jar, computed=e2fad0566799ca4617b925fa487995d210fafbc497a80ff8d61cf41a1d849cd9, expected=null]
+2023/03/12 22:10:50:791 INFO m.a: Resource failed digest check [rsrc=bin/lib/slf4j-api-1.7.36.jar, computed=ed0946373a973aef8ada76f936e0f767f9a7500f405b67e4f756a47fa9696aa6, expected=null]
+2023/03/12 22:10:50:799 INFO m.a: Resource failed digest check [rsrc=bin/lib/pdfbox-2.0.26.jar, computed=aac2ac73ca8de26895a9bf6f598af26eedc7a05401fc7b7239fa537a3e1af064, expected=null]
+2023/03/12 22:10:50:811 INFO m.a: Resource failed digest check [rsrc=bin/lib/poi-ooxml-5.2.3.jar, computed=6666697bfa817d1c883c50e258de03229172b4642b571048ff264336bb7c60cb, expected=null]
+2023/03/12 22:10:50:819 INFO m.a: Resource failed digest check [rsrc=bin/lib/poi-scratchpad-5.2.3.jar, computed=ff8ebb6a4543aaf7a8816c39fcb14fe5ceba26c4973049e5a6c71544f0bcae50, expected=null]
+2023/03/12 22:10:50:821 INFO m.a: Resource failed digest check [rsrc=bin/lib/xml-apis-1.4.01.jar, computed=ffc82c86d6cd3e8f69329267c5dc1f98e7cefe8d9c982aa8913033ad1f4b1a98, expected=null]
+2023/03/12 22:10:50:822 INFO m.a: Resource failed digest check [rsrc=bin/lib/xml-apis-ext-1.3.04.jar, computed=4e018ad6d3db15f9e0f4f549e140f84c0e03db455ef660941231f07c2f16e57d, expected=null]
+2023/03/12 22:10:50:839 INFO m.a: Resource failed digest check [rsrc=bin/lib/xmlgraphics-commons-2.6.jar, computed=5a708c885dec9e8fc186e18b5f937a57120fca33e1c1e38e956d27c56dba1527, expected=null]
+2023/03/12 22:10:50:866 INFO m.a: Resource failed digest check [rsrc=bin/lib/xmlsec-3.0.0.jar, computed=615b3b32657c4e5a9f3b18a49f456cadfd383954d11c5198ea3a0a8ed1928fe9, expected=null]
+2023/03/12 22:10:50:890 INFO m.a: Resource failed digest check [rsrc=bin/lib/xmlbeans-5.1.1.jar, computed=40b2edeadb0a9a293caf1d79636db7635cfcdfc6c91e7a755c153e75de8d7463, expected=null]
+2023/03/12 22:10:50:937 INFO m.a: Resource failed digest check [rsrc=bin/lib/bcprov-jdk15on-1.70.jar, computed=cb8c96cd2d00e5879f9594e87c64c14d058db27d0fab2801742acbc786edfcdb, expected=null]
+2023/03/12 22:10:50:942 INFO m.a: Resource failed digest check [rsrc=bin/lib/poi-ooxml-lite-5.2.3.jar, computed=a47ab5fc81c0cdf755398f03a7eb5cad6e44e8c8a1264d9bea2648d146004384, expected=null]
+2023/03/12 22:10:51:115 INFO m.a: Resource failed digest check [rsrc=bin/lib/poi-ooxml-full-5.2.3.jar, computed=14bbac55d072164a83bcec11c26764ee81b878d71e666fe4d7d7cf97b9d0fb81, expected=null]
+2023/03/12 22:10:51:115 INFO m.a: Verified resources [count=135, size=96456k, duration=466ms]
+2023/03/12 22:10:51:116 INFO m.a: 51 of 135 rsrcs require update (0 assumed valid).
+2023/03/12 22:10:51:148 WARNING m.a: Download failed [rsrc=null]
+java.io.FileNotFoundException: https://raw.githubusercontent.com/SeriousCancerous/INVENTORY-TOOL/master/poi-javadoc-5.2.3.jar
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1974)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1969)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1968)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1536)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1520)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:250)
+	at com.threerings.getdown.net.HTTPDownloader.checkSize(Unknown Source)
+	at com.threerings.getdown.net.Downloader.discoverSize(Unknown Source)
+	at com.threerings.getdown.net.Downloader.download(Unknown Source)
+	at com.threerings.getdown.launcher.Getdown.download(Unknown Source)
+	at com.threerings.getdown.launcher.Getdown.getdown(Unknown Source)
+	at com.threerings.getdown.launcher.Getdown.run(Unknown Source)
+Caused by: java.io.FileNotFoundException: https://raw.githubusercontent.com/SeriousCancerous/INVENTORY-TOOL/master/poi-javadoc-5.2.3.jar
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1920)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1520)
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:527)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:334)
+	... 6 more
+2023/03/12 22:10:51:148 INFO m.a: Verifying application: https://raw.githubusercontent.com/SeriousCancerous/INVENTORY-TOOL/master/
+2023/03/12 22:10:51:148 INFO m.a: Version: -1
+2023/03/12 22:10:51:148 INFO m.a: Class: dsk.inventory.tool.main.MainFrame
+2023/03/12 22:10:51:149 INFO m.a: Attempting to refetch 'digest.txt' from 'https://raw.githubusercontent.com/SeriousCancerous/INVENTORY-TOOL/master/digest.txt'.
+2023/03/12 22:10:51:189 INFO m.a: No signers, not verifying file [path=digest.txt]
+2023/03/12 22:10:51:190 INFO m.a: Attempting to refetch 'digest2.txt' from 'https://raw.githubusercontent.com/SeriousCancerous/INVENTORY-TOOL/master/digest2.txt'.
+2023/03/12 22:10:51:247 INFO m.a: No signers, not verifying file [path=digest2.txt]
+2023/03/12 22:10:51:258 INFO m.a: Resource failed digest check [rsrc=getdown.txt, computed=10de29c8a9692380e453dcf83879a3bed6e3b5b028793cf04086ff7515439077, expected=2ff4a9c00c3abd7ba896d3fc0f6c03f04681b3732f18fcedc146909ed23b5e7f]
+2023/03/12 22:10:51:258 INFO m.a: Attempting to refetch 'getdown.txt' from 'https://raw.githubusercontent.com/SeriousCancerous/INVENTORY-TOOL/master/getdown.txt'.
+2023/03/12 22:10:51:294 INFO m.a: Attempting to refetch 'digest.txt' from 'https://raw.githubusercontent.com/SeriousCancerous/INVENTORY-TOOL/master/digest.txt'.
+2023/03/12 22:10:51:338 INFO m.a: No signers, not verifying file [path=digest.txt]
+2023/03/12 22:10:51:340 INFO m.a: Attempting to refetch 'digest2.txt' from 'https://raw.githubusercontent.com/SeriousCancerous/INVENTORY-TOOL/master/digest2.txt'.
+2023/03/12 22:10:51:395 INFO m.a: No signers, not verifying file [path=digest2.txt]
+2023/03/12 22:10:51:417 INFO m.a: Resource failed digest check [rsrc=getdown.txt, computed=10de29c8a9692380e453dcf83879a3bed6e3b5b028793cf04086ff7515439077, expected=2ff4a9c00c3abd7ba896d3fc0f6c03f04681b3732f18fcedc146909ed23b5e7f]
+2023/03/12 22:10:51:417 WARNING m.a: getdown.txt failed to validate even after redownloading. Blindly forging onward.
+2023/03/12 22:10:51:420 INFO m.a: Resource failed digest check [rsrc=template/inventory-tool-data-entry.xls, computed=b2c16a58193a5bdfa83c2f399ef83e06ff1a29e8cc25a041fa5e2e0feeae6b0e, expected=f8f0e42d365997fc6e3e12c1bad74cb5fd8395dfe9cfda62b2d982e02d716414]
+2023/03/12 22:10:51:420 INFO m.a: Resource failed digest check [rsrc=bin/dsk.inventory.tool.jar, computed=0acd4da81adb66fe41a49abfc23a9d9ade0ddc2684e383554cca2c0cdf453f09, expected=3b8a5e4b9f9a0fdaa80f207223aea13564dd55af553b98a8c7402e7b37fa31c6]
+2023/03/12 22:10:51:421 INFO m.a: Resource failed digest check [rsrc=report/rspi_annex_a7_report.jasper, error=java.io.FileNotFoundException: files\report\rspi_annex_a7_report.jasper (The system cannot find the file specified)]
+2023/03/12 22:10:51:421 INFO m.a: Resource failed digest check [rsrc=report/rspi_annex_a7_report.jrxml, error=java.io.FileNotFoundException: files\report\rspi_annex_a7_report.jrxml (The system cannot find the file specified)]
+2023/03/12 22:10:51:423 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-constants-1.14.jar, computed=3e4192385dcb04e482746590f9f537228795638ebdc3c9e06081bc066c8c5e57, expected=null]
+2023/03/12 22:10:51:424 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-ext-1.14.jar, computed=7d933603f356fcc5bbe42012389ec6fe5d6d88b13ca83208536182a9f9467678, expected=null]
+2023/03/12 22:10:51:425 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-codec-1.14.jar, computed=2dcb91408a4cadf7e1bfc28e32b493d7577d51a671fc2dd11b83481e92072d5d, expected=null]
+2023/03/12 22:10:51:426 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-i18n-1.14.jar, computed=73c126c4c0f5e2af8c9b2ebc0ed841048b7729fcd9472b27660521c2a01019c9, expected=null]
+2023/03/12 22:10:51:428 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-script-1.14.jar, computed=bd6bca3ba0cbb881e25a3862e14287d59159e2e805f8b5965daf5b3f0a83da17, expected=null]
+2023/03/12 22:10:51:429 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-shared-resources-1.14.jar, computed=2220948e6ff71f8b20a36fcbfbadcc69347fc043747116c5538821bf35cbfeae, expected=null]
+2023/03/12 22:10:51:430 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-dom-1.14.jar, computed=de9e9bb2075e2df2e8388e7dbf598b9f5a526731cd3b32e1fc951f9b6034182b, expected=null]
+2023/03/12 22:10:51:432 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-awt-util-1.14.jar, computed=85a464c01f4bc90949dd3127282abe0d1bbebfa9645e96037909734649bd83da, expected=null]
+2023/03/12 22:10:51:433 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-gvt-1.14.jar, computed=1bb44c7e00bd81135fb0c233332579f93be4bcca37c429274b5c4eb44b071616, expected=null]
+2023/03/12 22:10:51:434 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-transcoder-1.14.jar, computed=ef4fbe1fd90de22bd093acbde19052ce42cc6c66d2bc7895f455f774dcdd8a71, expected=null]
+2023/03/12 22:10:51:436 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-svg-dom-1.14.jar, computed=90801ecfea40cebc0084219a515bba5cd93ea1effb838ce620cbf4bffdf6b82a, expected=null]
+2023/03/12 22:10:51:436 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-anim-1.14.jar, computed=02764c37f035f569f827d40aef44373728cf7a8d5eddc5e5e4f0a242f7044537, expected=null]
+2023/03/12 22:10:51:437 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-util-1.14.jar, computed=1325194cc0e498649de90deb00fe85f7607135acf84dbe6bd02753f039711ce8, expected=null]
+2023/03/12 22:10:51:443 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-bridge-1.14.jar, computed=c2f8cf0e0eaa39d73e5ae05f7974b4ebbfe30f3c1e89f36bd7fcf4d209805846, expected=null]
+2023/03/12 22:10:51:437 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-svggen-1.14.jar, computed=1d4d0505d888e2f2515a2286ca60df28e0563cde13c92a74f96edfce05f06ebc, expected=null]
+2023/03/12 22:10:51:450 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-xml-1.14.jar, computed=f2451158a17873c1a85d9ec5cda4b228aae7a87da7e932e37b1cc213b0dde9c8, expected=null]
+2023/03/12 22:10:51:453 INFO m.a: Resource failed digest check [rsrc=bin/lib/commons-io-2.11.0.jar, computed=d916d0f028337f9244045aa5a01bcf47c9ee6a0e427d193ad66d220f60a58275, expected=null]
+2023/03/12 22:10:51:456 INFO m.a: Resource failed digest check [rsrc=bin/lib/commons-codec-1.15.jar, computed=b44e02758bb234eec9a8eaf70b381a1bde84f78518f99b1d932909057a5bb2ba, expected=null]
+2023/03/12 22:10:51:457 INFO m.a: Resource failed digest check [rsrc=bin/lib/curvesapi-1.07.jar, computed=646643180a083e7d711ab07a32231891ee6dc6889315fa39d5c3f2c660bd3636, expected=null]
+2023/03/12 22:10:51:460 INFO m.a: Resource failed digest check [rsrc=bin/lib/graphics2d-0.40.jar, computed=fec4a1e856cbe7e9d2d33bb6ab7fb4907e827e244e65eefb6565c01a03faf0b7, expected=null]
+2023/03/12 22:10:51:460 INFO m.a: Resource failed digest check [rsrc=bin/lib/commons-collections4-4.4.jar, computed=3ac1c19a540e019053f76c007b645c07c1d36e1f0a6214bb2b5437d18fe09ce0, expected=null]
+2023/03/12 22:10:51:465 INFO m.a: Resource failed digest check [rsrc=bin/lib/jakarta.activation-2.0.1.jar, computed=78cba4193d95d4d5762e94593480840a8d9937ebce8a6b404322d620fc4e96d9, expected=null]
+2023/03/12 22:10:51:467 INFO m.a: Resource failed digest check [rsrc=bin/lib/commons-compress-1.21.jar, computed=63d768b2fd147a1f69d435d9a36174fb1a0bfd2f8ce5fb9d4fbda2f03d73708e, expected=null]
+2023/03/12 22:10:51:470 INFO m.a: Resource failed digest check [rsrc=bin/lib/jakarta.xml.bind-api-3.0.1.jar, computed=15bc5dd73f75643bdfd3fa865fd2a3c26fb2b73a19f7b72cbc8bcea57540c3df, expected=null]
+2023/03/12 22:10:51:470 INFO m.a: Resource failed digest check [rsrc=bin/lib/commons-logging-1.2.jar, computed=010df8aed4f6f4a7fd6e80dd4029331cacc856f60037f50a75c7fb629bac22f6, expected=null]
+2023/03/12 22:10:51:482 INFO m.a: Resource failed digest check [rsrc=bin/lib/bcutil-jdk15on-1.70.jar, computed=6a7e027dd389fe83bb24a8c422310a137b2c3a1e3d7ed11290d44b83ce86693d, expected=null]
+2023/03/12 22:10:51:497 INFO m.a: Resource failed digest check [rsrc=bin/lib/bcpkix-jdk15on-1.70.jar, computed=5527508926ab4c4235c4f7a1bc1b8f423ee6b237b3c2069f12449ad4bbc5cfaa, expected=null]
+2023/03/12 22:10:51:502 INFO m.a: Resource failed digest check [rsrc=bin/lib/fontbox-2.0.26.jar, computed=476ec39fbff0adf2fc0d02a332de2c62a000259b37b1a8c400d038a54fb813c2, expected=null]
+2023/03/12 22:10:51:506 INFO m.a: Resource failed digest check [rsrc=poi-5.2.3.jar, error=java.nio.file.NoSuchFileException: files\poi-5.2.3.jar]
+2023/03/12 22:10:51:507 INFO m.a: Resource failed digest check [rsrc=poi-examples-5.2.3.jar, error=java.nio.file.NoSuchFileException: files\poi-examples-5.2.3.jar]
+2023/03/12 22:10:51:507 INFO m.a: Resource failed digest check [rsrc=poi-excelant-5.2.3.jar, error=java.nio.file.NoSuchFileException: files\poi-excelant-5.2.3.jar]
+2023/03/12 22:10:51:507 INFO m.a: Resource failed digest check [rsrc=poi-javadoc-5.2.3.jar, error=java.nio.file.NoSuchFileException: files\poi-javadoc-5.2.3.jar]
+2023/03/12 22:10:51:510 INFO m.a: Resource failed digest check [rsrc=bin/lib/log4j-api-2.18.0.jar, computed=b390762a007088207bbf5cf1639f1966c5aac33796b9f542fd0205271db70cb7, expected=null]
+2023/03/12 22:10:51:526 INFO m.a: Resource failed digest check [rsrc=bin/lib/commons-math3-3.6.1.jar, computed=86be5910a5bc453ef0b6235ce3b643aaf99a87d3021eaa4974ed0cfea2fd4a28, expected=null]
+2023/03/12 22:10:51:530 INFO m.a: Resource failed digest check [rsrc=bin/lib/slf4j-api-1.7.36.jar, computed=ed0946373a973aef8ada76f936e0f767f9a7500f405b67e4f756a47fa9696aa6, expected=null]
+2023/03/12 22:10:51:530 INFO m.a: Resource failed digest check [rsrc=bin/lib/SparseBitSet-1.2.jar, computed=e2fad0566799ca4617b925fa487995d210fafbc497a80ff8d61cf41a1d849cd9, expected=null]
+2023/03/12 22:10:51:571 INFO m.a: Resource failed digest check [rsrc=bin/lib/poi-scratchpad-5.2.3.jar, computed=ff8ebb6a4543aaf7a8816c39fcb14fe5ceba26c4973049e5a6c71544f0bcae50, expected=null]
+2023/03/12 22:10:51:571 INFO m.a: Resource failed digest check [rsrc=bin/lib/pdfbox-2.0.26.jar, computed=aac2ac73ca8de26895a9bf6f598af26eedc7a05401fc7b7239fa537a3e1af064, expected=null]
+2023/03/12 22:10:51:577 INFO m.a: Resource failed digest check [rsrc=bin/lib/xml-apis-ext-1.3.04.jar, computed=4e018ad6d3db15f9e0f4f549e140f84c0e03db455ef660941231f07c2f16e57d, expected=null]
+2023/03/12 22:10:51:579 INFO m.a: Resource failed digest check [rsrc=bin/lib/xml-apis-1.4.01.jar, computed=ffc82c86d6cd3e8f69329267c5dc1f98e7cefe8d9c982aa8913033ad1f4b1a98, expected=null]
+2023/03/12 22:10:51:586 INFO m.a: Resource failed digest check [rsrc=bin/lib/poi-ooxml-5.2.3.jar, computed=6666697bfa817d1c883c50e258de03229172b4642b571048ff264336bb7c60cb, expected=null]
+2023/03/12 22:10:51:606 INFO m.a: Resource failed digest check [rsrc=bin/lib/xmlgraphics-commons-2.6.jar, computed=5a708c885dec9e8fc186e18b5f937a57120fca33e1c1e38e956d27c56dba1527, expected=null]
+2023/03/12 22:10:51:623 INFO m.a: Resource failed digest check [rsrc=bin/lib/xmlsec-3.0.0.jar, computed=615b3b32657c4e5a9f3b18a49f456cadfd383954d11c5198ea3a0a8ed1928fe9, expected=null]
+2023/03/12 22:10:51:643 INFO m.a: Resource failed digest check [rsrc=bin/lib/xmlbeans-5.1.1.jar, computed=40b2edeadb0a9a293caf1d79636db7635cfcdfc6c91e7a755c153e75de8d7463, expected=null]
+2023/03/12 22:10:51:675 INFO m.a: Resource failed digest check [rsrc=bin/lib/bcprov-jdk15on-1.70.jar, computed=cb8c96cd2d00e5879f9594e87c64c14d058db27d0fab2801742acbc786edfcdb, expected=null]
+2023/03/12 22:10:51:695 INFO m.a: Resource failed digest check [rsrc=bin/lib/poi-ooxml-lite-5.2.3.jar, computed=a47ab5fc81c0cdf755398f03a7eb5cad6e44e8c8a1264d9bea2648d146004384, expected=null]
+2023/03/12 22:10:51:849 INFO m.a: Resource failed digest check [rsrc=bin/lib/poi-ooxml-full-5.2.3.jar, computed=14bbac55d072164a83bcec11c26764ee81b878d71e666fe4d7d7cf97b9d0fb81, expected=null]
+2023/03/12 22:10:51:849 INFO m.a: Verified resources [count=135, size=96456k, duration=432ms]
+2023/03/12 22:10:51:849 INFO m.a: 51 of 135 rsrcs require update (0 assumed valid).
+2023/03/12 22:10:51:881 WARNING m.a: Download failed [rsrc=null]
+java.io.FileNotFoundException: https://raw.githubusercontent.com/SeriousCancerous/INVENTORY-TOOL/master/poi-javadoc-5.2.3.jar
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1974)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1969)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1968)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1536)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1520)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:250)
+	at com.threerings.getdown.net.HTTPDownloader.checkSize(Unknown Source)
+	at com.threerings.getdown.net.Downloader.discoverSize(Unknown Source)
+	at com.threerings.getdown.net.Downloader.download(Unknown Source)
+	at com.threerings.getdown.launcher.Getdown.download(Unknown Source)
+	at com.threerings.getdown.launcher.Getdown.getdown(Unknown Source)
+	at com.threerings.getdown.launcher.Getdown.run(Unknown Source)
+Caused by: java.io.FileNotFoundException: https://raw.githubusercontent.com/SeriousCancerous/INVENTORY-TOOL/master/poi-javadoc-5.2.3.jar
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1920)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1520)
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:527)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:334)
+	... 6 more
+2023/03/12 22:10:51:881 INFO m.a: Verifying application: https://raw.githubusercontent.com/SeriousCancerous/INVENTORY-TOOL/master/
+2023/03/12 22:10:51:881 INFO m.a: Version: -1
+2023/03/12 22:10:51:881 INFO m.a: Class: dsk.inventory.tool.main.MainFrame
+2023/03/12 22:10:51:882 INFO m.a: Attempting to refetch 'digest.txt' from 'https://raw.githubusercontent.com/SeriousCancerous/INVENTORY-TOOL/master/digest.txt'.
+2023/03/12 22:10:51:922 INFO m.a: No signers, not verifying file [path=digest.txt]
+2023/03/12 22:10:51:923 INFO m.a: Attempting to refetch 'digest2.txt' from 'https://raw.githubusercontent.com/SeriousCancerous/INVENTORY-TOOL/master/digest2.txt'.
+2023/03/12 22:10:51:963 INFO m.a: No signers, not verifying file [path=digest2.txt]
+2023/03/12 22:10:51:970 INFO m.a: Resource failed digest check [rsrc=getdown.txt, computed=10de29c8a9692380e453dcf83879a3bed6e3b5b028793cf04086ff7515439077, expected=2ff4a9c00c3abd7ba896d3fc0f6c03f04681b3732f18fcedc146909ed23b5e7f]
+2023/03/12 22:10:51:970 INFO m.a: Attempting to refetch 'getdown.txt' from 'https://raw.githubusercontent.com/SeriousCancerous/INVENTORY-TOOL/master/getdown.txt'.
+2023/03/12 22:10:52:009 INFO m.a: Attempting to refetch 'digest.txt' from 'https://raw.githubusercontent.com/SeriousCancerous/INVENTORY-TOOL/master/digest.txt'.
+2023/03/12 22:10:52:059 INFO m.a: No signers, not verifying file [path=digest.txt]
+2023/03/12 22:10:52:060 INFO m.a: Attempting to refetch 'digest2.txt' from 'https://raw.githubusercontent.com/SeriousCancerous/INVENTORY-TOOL/master/digest2.txt'.
+2023/03/12 22:10:52:111 INFO m.a: No signers, not verifying file [path=digest2.txt]
+2023/03/12 22:10:52:131 INFO m.a: Resource failed digest check [rsrc=getdown.txt, computed=10de29c8a9692380e453dcf83879a3bed6e3b5b028793cf04086ff7515439077, expected=2ff4a9c00c3abd7ba896d3fc0f6c03f04681b3732f18fcedc146909ed23b5e7f]
+2023/03/12 22:10:52:131 WARNING m.a: getdown.txt failed to validate even after redownloading. Blindly forging onward.
+2023/03/12 22:10:52:134 INFO m.a: Resource failed digest check [rsrc=template/inventory-tool-data-entry.xls, computed=b2c16a58193a5bdfa83c2f399ef83e06ff1a29e8cc25a041fa5e2e0feeae6b0e, expected=f8f0e42d365997fc6e3e12c1bad74cb5fd8395dfe9cfda62b2d982e02d716414]
+2023/03/12 22:10:52:135 INFO m.a: Resource failed digest check [rsrc=bin/dsk.inventory.tool.jar, computed=0acd4da81adb66fe41a49abfc23a9d9ade0ddc2684e383554cca2c0cdf453f09, expected=3b8a5e4b9f9a0fdaa80f207223aea13564dd55af553b98a8c7402e7b37fa31c6]
+2023/03/12 22:10:52:135 INFO m.a: Resource failed digest check [rsrc=report/rspi_annex_a7_report.jrxml, error=java.io.FileNotFoundException: files\report\rspi_annex_a7_report.jrxml (The system cannot find the file specified)]
+2023/03/12 22:10:52:135 INFO m.a: Resource failed digest check [rsrc=report/rspi_annex_a7_report.jasper, error=java.io.FileNotFoundException: files\report\rspi_annex_a7_report.jasper (The system cannot find the file specified)]
+2023/03/12 22:10:52:137 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-constants-1.14.jar, computed=3e4192385dcb04e482746590f9f537228795638ebdc3c9e06081bc066c8c5e57, expected=null]
+2023/03/12 22:10:52:139 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-codec-1.14.jar, computed=2dcb91408a4cadf7e1bfc28e32b493d7577d51a671fc2dd11b83481e92072d5d, expected=null]
+2023/03/12 22:10:52:140 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-i18n-1.14.jar, computed=73c126c4c0f5e2af8c9b2ebc0ed841048b7729fcd9472b27660521c2a01019c9, expected=null]
+2023/03/12 22:10:52:142 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-dom-1.14.jar, computed=de9e9bb2075e2df2e8388e7dbf598b9f5a526731cd3b32e1fc951f9b6034182b, expected=null]
+2023/03/12 22:10:52:139 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-ext-1.14.jar, computed=7d933603f356fcc5bbe42012389ec6fe5d6d88b13ca83208536182a9f9467678, expected=null]
+2023/03/12 22:10:52:144 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-shared-resources-1.14.jar, computed=2220948e6ff71f8b20a36fcbfbadcc69347fc043747116c5538821bf35cbfeae, expected=null]
+2023/03/12 22:10:52:144 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-gvt-1.14.jar, computed=1bb44c7e00bd81135fb0c233332579f93be4bcca37c429274b5c4eb44b071616, expected=null]
+2023/03/12 22:10:52:145 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-script-1.14.jar, computed=bd6bca3ba0cbb881e25a3862e14287d59159e2e805f8b5965daf5b3f0a83da17, expected=null]
+2023/03/12 22:10:52:146 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-awt-util-1.14.jar, computed=85a464c01f4bc90949dd3127282abe0d1bbebfa9645e96037909734649bd83da, expected=null]
+2023/03/12 22:10:52:149 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-transcoder-1.14.jar, computed=ef4fbe1fd90de22bd093acbde19052ce42cc6c66d2bc7895f455f774dcdd8a71, expected=null]
+2023/03/12 22:10:52:149 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-xml-1.14.jar, computed=f2451158a17873c1a85d9ec5cda4b228aae7a87da7e932e37b1cc213b0dde9c8, expected=null]
+2023/03/12 22:10:52:150 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-anim-1.14.jar, computed=02764c37f035f569f827d40aef44373728cf7a8d5eddc5e5e4f0a242f7044537, expected=null]
+2023/03/12 22:10:52:151 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-util-1.14.jar, computed=1325194cc0e498649de90deb00fe85f7607135acf84dbe6bd02753f039711ce8, expected=null]
+2023/03/12 22:10:52:152 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-svggen-1.14.jar, computed=1d4d0505d888e2f2515a2286ca60df28e0563cde13c92a74f96edfce05f06ebc, expected=null]
+2023/03/12 22:10:52:153 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-svg-dom-1.14.jar, computed=90801ecfea40cebc0084219a515bba5cd93ea1effb838ce620cbf4bffdf6b82a, expected=null]
+2023/03/12 22:10:52:159 INFO m.a: Resource failed digest check [rsrc=bin/lib/batik-bridge-1.14.jar, computed=c2f8cf0e0eaa39d73e5ae05f7974b4ebbfe30f3c1e89f36bd7fcf4d209805846, expected=null]
+2023/03/12 22:10:52:161 INFO m.a: Resource failed digest check [rsrc=bin/lib/commons-logging-1.2.jar, computed=010df8aed4f6f4a7fd6e80dd4029331cacc856f60037f50a75c7fb629bac22f6, expected=null]
+2023/03/12 22:10:52:163 INFO m.a: Resource failed digest check [rsrc=bin/lib/commons-io-2.11.0.jar, computed=d916d0f028337f9244045aa5a01bcf47c9ee6a0e427d193ad66d220f60a58275, expected=null]
+2023/03/12 22:10:52:165 INFO m.a: Resource failed digest check [rsrc=bin/lib/commons-codec-1.15.jar, computed=b44e02758bb234eec9a8eaf70b381a1bde84f78518f99b1d932909057a5bb2ba, expected=null]
+2023/03/12 22:10:52:169 INFO m.a: Resource failed digest check [rsrc=bin/lib/graphics2d-0.40.jar, computed=fec4a1e856cbe7e9d2d33bb6ab7fb4907e827e244e65eefb6565c01a03faf0b7, expected=null]
+2023/03/12 22:10:52:178 INFO m.a: Resource failed digest check [rsrc=bin/lib/curvesapi-1.07.jar, computed=646643180a083e7d711ab07a32231891ee6dc6889315fa39d5c3f2c660bd3636, expected=null]
+2023/03/12 22:10:52:180 INFO m.a: Resource failed digest check [rsrc=bin/lib/commons-collections4-4.4.jar, computed=3ac1c19a540e019053f76c007b645c07c1d36e1f0a6214bb2b5437d18fe09ce0, expected=null]
+2023/03/12 22:10:52:180 INFO m.a: Resource failed digest check [rsrc=bin/lib/jakarta.activation-2.0.1.jar, computed=78cba4193d95d4d5762e94593480840a8d9937ebce8a6b404322d620fc4e96d9, expected=null]
+2023/03/12 22:10:52:182 INFO m.a: Resource failed digest check [rsrc=bin/lib/commons-compress-1.21.jar, computed=63d768b2fd147a1f69d435d9a36174fb1a0bfd2f8ce5fb9d4fbda2f03d73708e, expected=null]
+2023/03/12 22:10:52:183 INFO m.a: Resource failed digest check [rsrc=bin/lib/jakarta.xml.bind-api-3.0.1.jar, computed=15bc5dd73f75643bdfd3fa865fd2a3c26fb2b73a19f7b72cbc8bcea57540c3df, expected=null]
+2023/03/12 22:10:52:190 INFO m.a: Resource failed digest check [rsrc=bin/lib/bcutil-jdk15on-1.70.jar, computed=6a7e027dd389fe83bb24a8c422310a137b2c3a1e3d7ed11290d44b83ce86693d, expected=null]
+2023/03/12 22:10:52:203 INFO m.a: Resource failed digest check [rsrc=bin/lib/fontbox-2.0.26.jar, computed=476ec39fbff0adf2fc0d02a332de2c62a000259b37b1a8c400d038a54fb813c2, expected=null]
+2023/03/12 22:10:52:210 INFO m.a: Resource failed digest check [rsrc=bin/lib/log4j-api-2.18.0.jar, computed=b390762a007088207bbf5cf1639f1966c5aac33796b9f542fd0205271db70cb7, expected=null]
+2023/03/12 22:10:52:211 INFO m.a: Resource failed digest check [rsrc=poi-5.2.3.jar, error=java.nio.file.NoSuchFileException: files\poi-5.2.3.jar]
+2023/03/12 22:10:52:212 INFO m.a: Resource failed digest check [rsrc=poi-examples-5.2.3.jar, error=java.nio.file.NoSuchFileException: files\poi-examples-5.2.3.jar]
+2023/03/12 22:10:52:212 INFO m.a: Resource failed digest check [rsrc=poi-excelant-5.2.3.jar, error=java.nio.file.NoSuchFileException: files\poi-excelant-5.2.3.jar]
+2023/03/12 22:10:52:213 INFO m.a: Resource failed digest check [rsrc=poi-javadoc-5.2.3.jar, error=java.nio.file.NoSuchFileException: files\poi-javadoc-5.2.3.jar]
+2023/03/12 22:10:52:213 INFO m.a: Resource failed digest check [rsrc=bin/lib/bcpkix-jdk15on-1.70.jar, computed=5527508926ab4c4235c4f7a1bc1b8f423ee6b237b3c2069f12449ad4bbc5cfaa, expected=null]
+2023/03/12 22:10:52:227 INFO m.a: Resource failed digest check [rsrc=bin/lib/commons-math3-3.6.1.jar, computed=86be5910a5bc453ef0b6235ce3b643aaf99a87d3021eaa4974ed0cfea2fd4a28, expected=null]
+2023/03/12 22:10:52:240 INFO m.a: Resource failed digest check [rsrc=bin/lib/slf4j-api-1.7.36.jar, computed=ed0946373a973aef8ada76f936e0f767f9a7500f405b67e4f756a47fa9696aa6, expected=null]
+2023/03/12 22:10:52:243 INFO m.a: Resource failed digest check [rsrc=bin/lib/SparseBitSet-1.2.jar, computed=e2fad0566799ca4617b925fa487995d210fafbc497a80ff8d61cf41a1d849cd9, expected=null]
+2023/03/12 22:10:52:278 INFO m.a: Resource failed digest check [rsrc=bin/lib/poi-ooxml-5.2.3.jar, computed=6666697bfa817d1c883c50e258de03229172b4642b571048ff264336bb7c60cb, expected=null]
+2023/03/12 22:10:52:283 INFO m.a: Resource failed digest check [rsrc=bin/lib/poi-scratchpad-5.2.3.jar, computed=ff8ebb6a4543aaf7a8816c39fcb14fe5ceba26c4973049e5a6c71544f0bcae50, expected=null]
+2023/03/12 22:10:52:283 INFO m.a: Resource failed digest check [rsrc=bin/lib/pdfbox-2.0.26.jar, computed=aac2ac73ca8de26895a9bf6f598af26eedc7a05401fc7b7239fa537a3e1af064, expected=null]
+2023/03/12 22:10:52:287 INFO m.a: Resource failed digest check [rsrc=bin/lib/xml-apis-ext-1.3.04.jar, computed=4e018ad6d3db15f9e0f4f549e140f84c0e03db455ef660941231f07c2f16e57d, expected=null]
+2023/03/12 22:10:52:298 INFO m.a: Resource failed digest check [rsrc=bin/lib/xml-apis-1.4.01.jar, computed=ffc82c86d6cd3e8f69329267c5dc1f98e7cefe8d9c982aa8913033ad1f4b1a98, expected=null]
+2023/03/12 22:10:52:305 INFO m.a: Resource failed digest check [rsrc=bin/lib/xmlgraphics-commons-2.6.jar, computed=5a708c885dec9e8fc186e18b5f937a57120fca33e1c1e38e956d27c56dba1527, expected=null]
+2023/03/12 22:10:52:321 INFO m.a: Resource failed digest check [rsrc=bin/lib/xmlsec-3.0.0.jar, computed=615b3b32657c4e5a9f3b18a49f456cadfd383954d11c5198ea3a0a8ed1928fe9, expected=null]
+2023/03/12 22:10:52:351 INFO m.a: Resource failed digest check [rsrc=bin/lib/xmlbeans-5.1.1.jar, computed=40b2edeadb0a9a293caf1d79636db7635cfcdfc6c91e7a755c153e75de8d7463, expected=null]
+2023/03/12 22:10:52:389 INFO m.a: Resource failed digest check [rsrc=bin/lib/poi-ooxml-lite-5.2.3.jar, computed=a47ab5fc81c0cdf755398f03a7eb5cad6e44e8c8a1264d9bea2648d146004384, expected=null]
+2023/03/12 22:10:52:389 INFO m.a: Resource failed digest check [rsrc=bin/lib/bcprov-jdk15on-1.70.jar, computed=cb8c96cd2d00e5879f9594e87c64c14d058db27d0fab2801742acbc786edfcdb, expected=null]
+2023/03/12 22:10:52:551 INFO m.a: Resource failed digest check [rsrc=bin/lib/poi-ooxml-full-5.2.3.jar, computed=14bbac55d072164a83bcec11c26764ee81b878d71e666fe4d7d7cf97b9d0fb81, expected=null]
+2023/03/12 22:10:52:551 INFO m.a: Verified resources [count=135, size=96456k, duration=419ms]
+2023/03/12 22:10:52:551 INFO m.a: 51 of 135 rsrcs require update (0 assumed valid).
+2023/03/12 22:10:52:587 WARNING m.a: Download failed [rsrc=null]
+java.io.FileNotFoundException: https://raw.githubusercontent.com/SeriousCancerous/INVENTORY-TOOL/master/poi-javadoc-5.2.3.jar
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1974)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1969)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1968)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1536)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1520)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:250)
+	at com.threerings.getdown.net.HTTPDownloader.checkSize(Unknown Source)
+	at com.threerings.getdown.net.Downloader.discoverSize(Unknown Source)
+	at com.threerings.getdown.net.Downloader.download(Unknown Source)
+	at com.threerings.getdown.launcher.Getdown.download(Unknown Source)
+	at com.threerings.getdown.launcher.Getdown.getdown(Unknown Source)
+	at com.threerings.getdown.launcher.Getdown.run(Unknown Source)
+Caused by: java.io.FileNotFoundException: https://raw.githubusercontent.com/SeriousCancerous/INVENTORY-TOOL/master/poi-javadoc-5.2.3.jar
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1920)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1520)
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:527)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:334)
+	... 6 more
+2023/03/12 22:10:52:587 WARNING m.a: Pants! We couldn't get the job done.
+2023/03/12 22:10:52:587 WARNING m.a: getdown() failed.
+java.io.IOException: m.unable_to_repair
+	at com.threerings.getdown.launcher.Getdown.getdown(Unknown Source)
+	at com.threerings.getdown.launcher.Getdown.run(Unknown Source)
+2023/03/12 22:10:52:587 INFO m.a: Releasing lock

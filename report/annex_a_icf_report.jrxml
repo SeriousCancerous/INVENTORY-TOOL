@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rpci_rpcppe_report" language="groovy" pageWidth="1008" pageHeight="612" orientation="Landscape" columnWidth="968" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rpci_rpcppe_report" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
@@ -23,7 +23,7 @@
 		<groupHeader>
 			<band height="74">
 				<staticText>
-					<reportElement x="0" y="48" width="75" height="26"/>
+					<reportElement x="0" y="48" width="60" height="26"/>
 					<box>
 						<topPen lineWidth="0.5"/>
 						<leftPen lineWidth="0.5"/>
@@ -31,90 +31,12 @@
 						<rightPen lineWidth="0.5"/>
 					</box>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
-						<font fontName="Bookman Old Style" size="8" isBold="true"/>
+						<font fontName="Bookman Old Style" size="6" isBold="true"/>
 					</textElement>
 					<text><![CDATA[ARTICLE/ITEM]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="75" y="48" width="273" height="26"/>
-					<box>
-						<topPen lineWidth="0.5"/>
-						<leftPen lineWidth="0.5"/>
-						<bottomPen lineWidth="0.5"/>
-						<rightPen lineWidth="0.5"/>
-					</box>
-					<textElement textAlignment="Center" verticalAlignment="Middle">
-						<font fontName="Bookman Old Style" size="8" isBold="true"/>
-					</textElement>
-					<text><![CDATA[DESCRIPTION]]></text>
-				</staticText>
-				<staticText>
-					<reportElement x="348" y="48" width="124" height="26"/>
-					<box>
-						<topPen lineWidth="0.5"/>
-						<leftPen lineWidth="0.5"/>
-						<bottomPen lineWidth="0.5"/>
-						<rightPen lineWidth="0.5"/>
-					</box>
-					<textElement textAlignment="Center" verticalAlignment="Middle">
-						<font fontName="Bookman Old Style" size="8" isBold="true"/>
-					</textElement>
-					<text><![CDATA[OLD PROPERTY NO. ASSIGNED]]></text>
-				</staticText>
-				<staticText>
-					<reportElement x="472" y="48" width="98" height="26"/>
-					<box>
-						<topPen lineWidth="0.5"/>
-						<leftPen lineWidth="0.5"/>
-						<bottomPen lineWidth="0.5"/>
-						<rightPen lineWidth="0.5"/>
-					</box>
-					<textElement textAlignment="Center" verticalAlignment="Middle">
-						<font fontName="Bookman Old Style" size="8" isBold="true"/>
-					</textElement>
-					<text><![CDATA[NEW PROPERTY NO ASSIGNED(TO BE FILLED UP DURING VALIDATION)]]></text>
-				</staticText>
-				<staticText>
-					<reportElement x="570" y="48" width="60" height="26"/>
-					<box>
-						<topPen lineWidth="0.5"/>
-						<leftPen lineWidth="0.5"/>
-						<bottomPen lineWidth="0.5"/>
-						<rightPen lineWidth="0.5"/>
-					</box>
-					<textElement textAlignment="Center" verticalAlignment="Middle">
-						<font fontName="Bookman Old Style" size="8" isBold="true"/>
-					</textElement>
-					<text><![CDATA[UNIT OF MEASURE]]></text>
-				</staticText>
-				<staticText>
-					<reportElement x="630" y="48" width="80" height="26"/>
-					<box>
-						<topPen lineWidth="0.5"/>
-						<leftPen lineWidth="0.5"/>
-						<bottomPen lineWidth="0.5"/>
-						<rightPen lineWidth="0.5"/>
-					</box>
-					<textElement textAlignment="Center" verticalAlignment="Middle">
-						<font fontName="Bookman Old Style" size="8" isBold="true"/>
-					</textElement>
-					<text><![CDATA[UNIT VALUE]]></text>
-				</staticText>
-				<staticText>
-					<reportElement x="710" y="48" width="80" height="26"/>
-					<box>
-						<topPen lineWidth="0.5"/>
-						<leftPen lineWidth="0.5"/>
-						<bottomPen lineWidth="0.5"/>
-						<rightPen lineWidth="0.5"/>
-					</box>
-					<textElement textAlignment="Center" verticalAlignment="Middle">
-						<font fontName="Bookman Old Style" size="8" isBold="true"/>
-					</textElement>
-					<text><![CDATA[QUANTITY PER PROPERTY CARD]]></text>
-				</staticText>
-				<staticText>
-					<reportElement x="790" y="48" width="59" height="26"/>
+					<reportElement x="60" y="48" width="273" height="26"/>
 					<box>
 						<topPen lineWidth="0.5"/>
 						<leftPen lineWidth="0.5"/>
@@ -124,10 +46,10 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="Bookman Old Style" size="7" isBold="true"/>
 					</textElement>
-					<text><![CDATA[LOCATION/WHEREABOUTS]]></text>
+					<text><![CDATA[DESCRIPTION]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="849" y="48" width="59" height="26"/>
+					<reportElement x="333" y="48" width="102" height="26"/>
 					<box>
 						<topPen lineWidth="0.5"/>
 						<leftPen lineWidth="0.5"/>
@@ -135,12 +57,90 @@
 						<rightPen lineWidth="0.5"/>
 					</box>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
-						<font fontName="Bookman Old Style" size="8" isBold="true"/>
+						<font fontName="Bookman Old Style" size="7" isBold="true"/>
+					</textElement>
+					<text><![CDATA[OLD PROPERTY NO. ASSIGNED]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="435" y="48" width="103" height="26"/>
+					<box>
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Bookman Old Style" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[NEW PROPERTY NO ASSIGNED(TO BE FILLED UP DURING VALIDATION)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="538" y="48" width="35" height="26"/>
+					<box>
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Bookman Old Style" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[UNIT OF MEASURE]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="573" y="48" width="48" height="26"/>
+					<box>
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Bookman Old Style" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[UNIT VALUE]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="621" y="48" width="38" height="26"/>
+					<box>
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Bookman Old Style" size="5" isBold="true"/>
+					</textElement>
+					<text><![CDATA[QUANTITY PER PROPERTY CARD]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="659" y="48" width="52" height="26"/>
+					<box>
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Bookman Old Style" size="5" isBold="true"/>
+					</textElement>
+					<text><![CDATA[LOCATION/ WHEREABOUTS]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="711" y="48" width="46" height="26"/>
+					<box>
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Bookman Old Style" size="6" isBold="true"/>
 					</textElement>
 					<text><![CDATA[CONDITION]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="908" y="48" width="60" height="26"/>
+					<reportElement x="757" y="48" width="45" height="26"/>
 					<box>
 						<topPen lineWidth="0.5"/>
 						<leftPen lineWidth="0.5"/>
@@ -148,12 +148,12 @@
 						<rightPen lineWidth="0.5"/>
 					</box>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
-						<font fontName="Bookman Old Style" size="8" isBold="true"/>
+						<font fontName="Bookman Old Style" size="6" isBold="true"/>
 					</textElement>
 					<text><![CDATA[REMARKS]]></text>
 				</staticText>
 				<textField>
-					<reportElement x="0" y="0" width="968" height="29"/>
+					<reportElement x="0" y="0" width="802" height="29"/>
 					<box leftPadding="0">
 						<topPen lineWidth="0.0"/>
 						<leftPen lineWidth="0.0"/>
@@ -161,12 +161,12 @@
 						<rightPen lineWidth="0.0"/>
 					</box>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
-						<font fontName="Bookman Old Style" size="24" isBold="true"/>
+						<font fontName="Bookman Old Style" size="22" isBold="true"/>
 					</textElement>
 					<textFieldExpression class="java.lang.String"><![CDATA["Inventory Count Form"]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="0" y="29" width="968" height="19"/>
+					<reportElement x="0" y="29" width="802" height="19"/>
 					<box leftPadding="0">
 						<topPen lineWidth="0.0"/>
 						<leftPen lineWidth="0.0"/>
@@ -174,7 +174,7 @@
 						<rightPen lineWidth="0.0"/>
 					</box>
 					<textElement textAlignment="Left" verticalAlignment="Top">
-						<font fontName="Bookman Old Style" size="10" isBold="true"/>
+						<font fontName="Bookman Old Style" size="8" isBold="true"/>
 					</textElement>
 					<textFieldExpression class="java.lang.String"><![CDATA["PPE Account Group: "]]></textFieldExpression>
 				</textField>
@@ -185,7 +185,7 @@
 				<staticText>
 					<reportElement x="0" y="9" width="100" height="20"/>
 					<textElement verticalAlignment="Middle">
-						<font fontName="Bookman Old Style" size="8"/>
+						<font fontName="Bookman Old Style" size="7"/>
 					</textElement>
 					<text><![CDATA[Prepared by:]]></text>
 				</staticText>
@@ -193,14 +193,14 @@
 					<reportElement stretchType="RelativeToBandHeight" x="0" y="33" width="212" height="20" isPrintWhenDetailOverflows="true"/>
 					<box leftPadding="5"/>
 					<textElement verticalAlignment="Bottom">
-						<font size="8" isUnderline="true"/>
+						<font size="7" isUnderline="true"/>
 					</textElement>
 					<textFieldExpression class="java.lang.String"><![CDATA[$P{A1_NAME}]]></textFieldExpression>
 				</textField>
 				<staticText>
-					<reportElement x="738" y="9" width="100" height="20"/>
+					<reportElement x="483" y="9" width="100" height="20"/>
 					<textElement verticalAlignment="Middle">
-						<font fontName="Bookman Old Style" size="8"/>
+						<font fontName="Bookman Old Style" size="7"/>
 					</textElement>
 					<text><![CDATA[Reviewed by:]]></text>
 				</staticText>
@@ -208,23 +208,23 @@
 					<reportElement x="0" y="53" width="212" height="20"/>
 					<box leftPadding="5"/>
 					<textElement verticalAlignment="Top">
-						<font size="8"/>
+						<font size="7"/>
 					</textElement>
 					<textFieldExpression class="java.lang.String"><![CDATA[$P{A1_TITLE}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="738" y="53" width="212" height="20"/>
+					<reportElement x="483" y="53" width="212" height="20"/>
 					<box leftPadding="5"/>
 					<textElement verticalAlignment="Top">
-						<font size="8"/>
+						<font size="7"/>
 					</textElement>
 					<textFieldExpression class="java.lang.String"><![CDATA[$P{A2_TITLE}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-					<reportElement stretchType="RelativeToBandHeight" x="738" y="33" width="212" height="20" isPrintWhenDetailOverflows="true"/>
+					<reportElement stretchType="RelativeToBandHeight" x="483" y="33" width="212" height="20" isPrintWhenDetailOverflows="true"/>
 					<box leftPadding="5"/>
 					<textElement verticalAlignment="Bottom">
-						<font size="8" isUnderline="true"/>
+						<font size="7" isUnderline="true"/>
 					</textElement>
 					<textFieldExpression class="java.lang.String"><![CDATA[$P{A2_NAME}]]></textFieldExpression>
 				</textField>
@@ -237,15 +237,15 @@
 	<title>
 		<band height="101" splitType="Stretch">
 			<image>
-				<reportElement x="242" y="0" width="500" height="101"/>
+				<reportElement x="151" y="0" width="500" height="101"/>
 				<imageExpression class="java.lang.String"><![CDATA[$P{REPORT_DIR}+"\\report\\resources\\report_header.png"]]></imageExpression>
 			</image>
 		</band>
 	</title>
 	<detail>
-		<band height="20" splitType="Stretch">
+		<band height="12" splitType="Stretch">
 			<textField isStretchWithOverflow="true">
-				<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="75" height="20" isPrintWhenDetailOverflows="true"/>
+				<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="60" height="12" isPrintWhenDetailOverflows="true"/>
 				<box leftPadding="5">
 					<topPen lineWidth="0.5"/>
 					<leftPen lineWidth="0.5"/>
@@ -253,12 +253,12 @@
 					<rightPen lineWidth="0.5"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Bookman Old Style" size="7"/>
+					<font fontName="Bookman Old Style" size="5"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{article}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
-				<reportElement stretchType="RelativeToBandHeight" x="75" y="0" width="273" height="20" isPrintWhenDetailOverflows="true"/>
+				<reportElement stretchType="RelativeToBandHeight" x="60" y="0" width="273" height="12" isPrintWhenDetailOverflows="true"/>
 				<box leftPadding="5">
 					<topPen lineWidth="0.5"/>
 					<leftPen lineWidth="0.5"/>
@@ -266,12 +266,12 @@
 					<rightPen lineWidth="0.5"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Bookman Old Style" size="7"/>
+					<font fontName="Bookman Old Style" size="5"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{description}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
-				<reportElement stretchType="RelativeToBandHeight" x="348" y="0" width="124" height="20" isPrintWhenDetailOverflows="true"/>
+				<reportElement stretchType="RelativeToBandHeight" x="333" y="0" width="102" height="12" isPrintWhenDetailOverflows="true"/>
 				<box leftPadding="5">
 					<topPen lineWidth="0.5"/>
 					<leftPen lineWidth="0.5"/>
@@ -279,12 +279,12 @@
 					<rightPen lineWidth="0.5"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Bookman Old Style" size="7"/>
+					<font fontName="Bookman Old Style" size="5"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{old_property_number}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
-				<reportElement stretchType="RelativeToBandHeight" x="472" y="0" width="98" height="20" isPrintWhenDetailOverflows="true"/>
+				<reportElement stretchType="RelativeToBandHeight" x="435" y="0" width="103" height="12" isPrintWhenDetailOverflows="true"/>
 				<box leftPadding="5">
 					<topPen lineWidth="0.5"/>
 					<leftPen lineWidth="0.5"/>
@@ -292,12 +292,12 @@
 					<rightPen lineWidth="0.5"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Bookman Old Style" size="7"/>
+					<font fontName="Bookman Old Style" size="5"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{property_number}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
-				<reportElement stretchType="RelativeToBandHeight" x="570" y="0" width="60" height="20" isPrintWhenDetailOverflows="true"/>
+				<reportElement stretchType="RelativeToBandHeight" x="538" y="0" width="35" height="12" isPrintWhenDetailOverflows="true"/>
 				<box leftPadding="5">
 					<topPen lineWidth="0.5"/>
 					<leftPen lineWidth="0.5"/>
@@ -305,12 +305,12 @@
 					<rightPen lineWidth="0.5"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Bookman Old Style" size="7"/>
+					<font fontName="Bookman Old Style" size="5"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{unit_of_measure}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" pattern="#,###.##;(#,###.##)">
-				<reportElement stretchType="RelativeToBandHeight" x="630" y="0" width="80" height="20" isPrintWhenDetailOverflows="true"/>
+				<reportElement stretchType="RelativeToBandHeight" x="573" y="0" width="48" height="12" isPrintWhenDetailOverflows="true"/>
 				<box leftPadding="4" rightPadding="4">
 					<topPen lineWidth="0.5"/>
 					<leftPen lineWidth="0.5"/>
@@ -318,12 +318,12 @@
 					<rightPen lineWidth="0.5"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="Bookman Old Style" size="7"/>
+					<font fontName="Bookman Old Style" size="5"/>
 				</textElement>
 				<textFieldExpression class="java.math.BigDecimal"><![CDATA[$F{unit_value}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" pattern="#,###.##;(#,###.##)">
-				<reportElement stretchType="RelativeToBandHeight" x="710" y="0" width="80" height="20" isPrintWhenDetailOverflows="true"/>
+				<reportElement stretchType="RelativeToBandHeight" x="621" y="0" width="38" height="12" isPrintWhenDetailOverflows="true"/>
 				<box leftPadding="4" rightPadding="4">
 					<topPen lineWidth="0.5"/>
 					<leftPen lineWidth="0.5"/>
@@ -331,12 +331,12 @@
 					<rightPen lineWidth="0.5"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="Bookman Old Style" size="7"/>
+					<font fontName="Bookman Old Style" size="5"/>
 				</textElement>
 				<textFieldExpression class="java.math.BigDecimal"><![CDATA[$F{quantity_per_property_card}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
-				<reportElement stretchType="RelativeToBandHeight" x="790" y="0" width="59" height="20" isPrintWhenDetailOverflows="true"/>
+				<reportElement stretchType="RelativeToBandHeight" x="659" y="0" width="52" height="12" isPrintWhenDetailOverflows="true"/>
 				<box leftPadding="5">
 					<topPen lineWidth="0.5"/>
 					<leftPen lineWidth="0.5"/>
@@ -344,12 +344,12 @@
 					<rightPen lineWidth="0.5"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Bookman Old Style" size="7"/>
+					<font fontName="Bookman Old Style" size="5"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{location_of_property}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
-				<reportElement stretchType="RelativeToBandHeight" x="849" y="0" width="59" height="20" isPrintWhenDetailOverflows="true"/>
+				<reportElement stretchType="RelativeToBandHeight" x="711" y="0" width="46" height="12" isPrintWhenDetailOverflows="true"/>
 				<box leftPadding="5">
 					<topPen lineWidth="0.5"/>
 					<leftPen lineWidth="0.5"/>
@@ -357,12 +357,12 @@
 					<rightPen lineWidth="0.5"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Bookman Old Style" size="7"/>
+					<font fontName="Bookman Old Style" size="5"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{condition}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
-				<reportElement stretchType="RelativeToBandHeight" x="908" y="0" width="60" height="20" isPrintWhenDetailOverflows="true"/>
+				<reportElement stretchType="RelativeToBandHeight" x="757" y="0" width="45" height="12" isPrintWhenDetailOverflows="true"/>
 				<box leftPadding="5">
 					<topPen lineWidth="0.5"/>
 					<leftPen lineWidth="0.5"/>
@@ -370,7 +370,7 @@
 					<rightPen lineWidth="0.5"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Bookman Old Style" size="7"/>
+					<font fontName="Bookman Old Style" size="5"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{remarks}]]></textFieldExpression>
 			</textField>
@@ -379,21 +379,21 @@
 	<pageFooter>
 		<band height="65" splitType="Stretch">
 			<image>
-				<reportElement x="216" y="4" width="550" height="61"/>
+				<reportElement x="133" y="4" width="550" height="61"/>
 				<imageExpression class="java.lang.String"><![CDATA[$P{REPORT_DIR}+"\\report\\resources\\report_footer.png"]]></imageExpression>
 			</image>
 			<textField>
-				<reportElement x="797" y="22" width="100" height="17"/>
+				<reportElement x="646" y="10" width="100" height="17"/>
 				<textElement textAlignment="Right" verticalAlignment="Middle"/>
 				<textFieldExpression class="java.lang.String"><![CDATA["Page "+$V{PAGE_NUMBER}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="897" y="22" width="12" height="17"/>
+				<reportElement x="746" y="10" width="12" height="17"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle"/>
 				<text><![CDATA[/]]></text>
 			</staticText>
 			<textField evaluationTime="Report">
-				<reportElement x="909" y="22" width="59" height="17"/>
+				<reportElement x="758" y="10" width="59" height="17"/>
 				<textElement verticalAlignment="Middle"/>
 				<textFieldExpression class="java.lang.String"><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
 			</textField>
