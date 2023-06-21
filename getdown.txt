@@ -15,6 +15,7 @@ code = bin/dsk.inventory.tool.jar
 
 #codes other files
 code = template/inventory-tool-data-entry.xls
+code = template/inventory-tool-data-entry-macro-build.xlsm
 code = dir_articles/dir_articles.xls
 code = report/dsk_property_sticker_v2.jasper
 code = report/dsk_property_sticker_v2.jrxml
