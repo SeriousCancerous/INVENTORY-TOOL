@@ -21,7 +21,7 @@
 	<parameter name="C1R5_NAME" class="java.lang.String"/>
 	<parameter name="C2R1_TITLE" class="java.lang.String"/>
 	<parameter name="C2R1_NAME" class="java.lang.String"/>
-	<parameter name="C1R1_DATE_ASSUMPTION" class="java.util.Date"/>
+	<parameter name="C0R1_DATE_ASSUMPTION" class="java.util.Date"/>
 	<parameter name="C3R1_TITLE" class="java.lang.String"/>
 	<parameter name="C3R1_NAME" class="java.lang.String"/>
 	<parameter name="C4R1_TITLE" class="java.lang.String"/>
@@ -302,7 +302,7 @@
 					</textElement>
 					<textFieldExpression class="java.lang.String"><![CDATA["For which "+$P{C0R1_NAME}+", "+$P{C0R1_TITLE}+", "+
 ($P{office_type}.toLowerCase().equals("division office")||$P{office_type}.toLowerCase().equals("regional office")?$P{D1R1_NAME}:$P{report_station}+($P{report_district_municipality}.trim().isEmpty()?"":" / "+$P{report_district_municipality}))
-+" is accountable, having assumed such accountability on "+new SimpleDateFormat("MMMM dd, yyyy").format($P{C1R1_DATE_ASSUMPTION})+"."]]></textFieldExpression>
++" is accountable, having assumed such accountability on "+new SimpleDateFormat("MMMM dd, yyyy").format($P{C0R1_DATE_ASSUMPTION})+"."]]></textFieldExpression>
 				</textField>
 			</band>
 		</groupHeader>
