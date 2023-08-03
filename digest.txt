@@ -1,5 +1,5 @@
 getdown.txt = a4436e4b8f8e79c10a9d4ea2157c03d3
-bin/dsk.inventory.tool.jar = 97a6bd8d19d9bbfc9e584fb0aee25cb4
+bin/dsk.inventory.tool.jar = ede2fdc2c9c0c03122812aaec917b617
 template/inventory-tool-data-entry.xls = 20080ff643fd4e8a8076099f6c731de4
 template/inventory-tool-data-entry-macro-build.xlsm = 1bd2c2717c4d3657a1ed6c208292aa52
 dir_articles/dir_articles.xls = 4ba8c0b022adc9651da52290f2c2c0e4
@@ -135,4 +135,4 @@ bin/lib/xmlgraphics-commons-2.6.jar = d7d8e11ccc4c789fda723e5589320fa7
 bin/lib/xmlsec-3.0.0.jar = 439221747bec87e992d77d92bfde39c7
 img/launcher-background.png = 685b2e7f391753489e2f202a868e070f
 img/progress-background.png = 2e8a599613d9de7b9670f406fbc8b3d8
-digest.txt = aac27d7f189eaf370d343f22e8c4ea99
+digest.txt = e2a62b04051faba980400fcf5f741237
